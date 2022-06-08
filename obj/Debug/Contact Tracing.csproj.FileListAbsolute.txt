@@ -1,0 +1,11 @@
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\bin\Debug\Contact Tracing.exe.config
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\bin\Debug\Contact Tracing.exe
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\bin\Debug\Contact Tracing.pdb
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact Tracing.csproj.AssemblyReference.cache
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact Tracing.csproj.SuggestedBindingRedirects.cache
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact_Tracing.Properties.Resources.resources
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact Tracing.csproj.GenerateResource.cache
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact Tracing.csproj.CoreCompileInputs.cache
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact Tracing.exe
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact Tracing.pdb
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact_Tracing.txtbxName.resources

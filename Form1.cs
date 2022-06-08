@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace Contact_Tracing
 {
-    public partial class Form1 : Form
+    public partial class txtbxName : Form
     {
-        public Form1()
+        public txtbxName()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtbxAddress_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
