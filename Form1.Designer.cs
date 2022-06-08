@@ -28,19 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(txtbxName));
             this.pctrbxLogo = new System.Windows.Forms.PictureBox();
             this.lblPrivacyNotice = new System.Windows.Forms.Label();
             this.lblContact_Tracing = new System.Windows.Forms.Label();
             this.lblPrvcyNtc2 = new System.Windows.Forms.Label();
             this.lblPrvcyNtc3 = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
-            this.lblDateFormat = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.Address = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.txtbxName1 = new System.Windows.Forms.TextBox();
             this.txtbxAddress = new System.Windows.Forms.TextBox();
+            this.grpbxGender = new System.Windows.Forms.GroupBox();
+            this.rdbtnMale = new System.Windows.Forms.RadioButton();
+            this.rdbtnFemale = new System.Windows.Forms.RadioButton();
+            this.lblAge = new System.Windows.Forms.Label();
+            this.txtbxAge = new System.Windows.Forms.TextBox();
+            this.lblContact = new System.Windows.Forms.Label();
+            this.txtbxContact = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.txtbxEmail = new System.Windows.Forms.TextBox();
+            this.lblBodyTemp = new System.Windows.Forms.Label();
+            this.txtbxBodyTemp = new System.Windows.Forms.TextBox();
+            this.txtbxDate = new System.Windows.Forms.TextBox();
+            this.grpbxQ1 = new System.Windows.Forms.GroupBox();
+            this.rdbtnQ1No = new System.Windows.Forms.RadioButton();
+            this.rdbtnQ1Yes = new System.Windows.Forms.RadioButton();
+            this.grpbxQ2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.chckbxSymptoms1 = new System.Windows.Forms.CheckBox();
+            this.chckbxSymptoms5 = new System.Windows.Forms.CheckBox();
+            this.chckbxSymptoms3 = new System.Windows.Forms.CheckBox();
+            this.chckbxSymptoms4 = new System.Windows.Forms.CheckBox();
+            this.chckbxSymptoms2 = new System.Windows.Forms.CheckBox();
+            this.chckbxSymptoms6 = new System.Windows.Forms.CheckBox();
+            this.lblDateFormat = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.grpbxQ4 = new System.Windows.Forms.GroupBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.grpbxQ3 = new System.Windows.Forms.RadioButton();
+            this.chckbxSymptoms7 = new System.Windows.Forms.CheckBox();
+            this.chckbxSymptoms9 = new System.Windows.Forms.CheckBox();
+            this.chckbxSymptoms8 = new System.Windows.Forms.CheckBox();
+            this.chckbxSymptoms10 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxLogo)).BeginInit();
+            this.grpbxGender.SuspendLayout();
+            this.grpbxQ1.SuspendLayout();
+            this.grpbxQ2.SuspendLayout();
+            this.grpbxQ4.SuspendLayout();
             this.SuspendLayout();
             // 
             // pctrbxLogo
@@ -70,12 +106,12 @@
             // 
             this.lblContact_Tracing.AutoSize = true;
             this.lblContact_Tracing.BackColor = System.Drawing.Color.Transparent;
-            this.lblContact_Tracing.Font = new System.Drawing.Font("Bookman Old Style", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContact_Tracing.Location = new System.Drawing.Point(189, 9);
+            this.lblContact_Tracing.Font = new System.Drawing.Font("Bookman Old Style", 37.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContact_Tracing.Location = new System.Drawing.Point(192, 22);
             this.lblContact_Tracing.Name = "lblContact_Tracing";
-            this.lblContact_Tracing.Size = new System.Drawing.Size(831, 90);
+            this.lblContact_Tracing.Size = new System.Drawing.Size(988, 71);
             this.lblContact_Tracing.TabIndex = 2;
-            this.lblContact_Tracing.Text = "CONTACT TRACING";
+            this.lblContact_Tracing.Text = "COVID-19 CONTACT TRACING";
             this.lblContact_Tracing.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblPrvcyNtc2
@@ -105,90 +141,474 @@
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblDate.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(967, 157);
+            this.lblDate.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Location = new System.Drawing.Point(996, 151);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(65, 24);
+            this.lblDate.Size = new System.Drawing.Size(58, 21);
             this.lblDate.TabIndex = 5;
             this.lblDate.Text = "Date:";
             this.lblDate.Click += new System.EventHandler(this.lblDate_Click);
-            // 
-            // lblDateFormat
-            // 
-            this.lblDateFormat.AutoSize = true;
-            this.lblDateFormat.BackColor = System.Drawing.Color.Transparent;
-            this.lblDateFormat.Font = new System.Drawing.Font("Bookman Old Style", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateFormat.Location = new System.Drawing.Point(1031, 160);
-            this.lblDateFormat.Name = "lblDateFormat";
-            this.lblDateFormat.Size = new System.Drawing.Size(78, 18);
-            this.lblDateFormat.TabIndex = 6;
-            this.lblDateFormat.Text = "mm/dd/yy";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
             this.lblName.BackColor = System.Drawing.Color.Transparent;
             this.lblName.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(60, 223);
+            this.lblName.Location = new System.Drawing.Point(39, 199);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(75, 24);
             this.lblName.TabIndex = 7;
             this.lblName.Text = "Name:";
             // 
-            // Address
+            // lblAddress
             // 
-            this.Address.AutoSize = true;
-            this.Address.BackColor = System.Drawing.Color.Transparent;
-            this.Address.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Address.Location = new System.Drawing.Point(40, 264);
-            this.Address.Name = "Address";
-            this.Address.Size = new System.Drawing.Size(95, 24);
-            this.Address.TabIndex = 8;
-            this.Address.Text = "Address:";
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.BackColor = System.Drawing.Color.Transparent;
+            this.lblAddress.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.Location = new System.Drawing.Point(40, 265);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(95, 24);
+            this.lblAddress.TabIndex = 8;
+            this.lblAddress.Text = "Address:";
+            this.lblAddress.Click += new System.EventHandler(this.lblAddress_Click);
             // 
-            // textBox1
+            // txtbxName1
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(160, 221);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(334, 31);
-            this.textBox1.TabIndex = 9;
+            this.txtbxName1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbxName1.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxName1.Location = new System.Drawing.Point(44, 226);
+            this.txtbxName1.Name = "txtbxName1";
+            this.txtbxName1.Size = new System.Drawing.Size(455, 31);
+            this.txtbxName1.TabIndex = 9;
             // 
             // txtbxAddress
             // 
             this.txtbxAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbxAddress.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbxAddress.Location = new System.Drawing.Point(160, 258);
+            this.txtbxAddress.Location = new System.Drawing.Point(43, 293);
             this.txtbxAddress.Multiline = true;
             this.txtbxAddress.Name = "txtbxAddress";
-            this.txtbxAddress.Size = new System.Drawing.Size(455, 39);
+            this.txtbxAddress.Size = new System.Drawing.Size(455, 104);
             this.txtbxAddress.TabIndex = 10;
             this.txtbxAddress.TextChanged += new System.EventHandler(this.txtbxAddress_TextChanged);
+            // 
+            // grpbxGender
+            // 
+            this.grpbxGender.BackColor = System.Drawing.Color.Transparent;
+            this.grpbxGender.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.grpbxGender.Controls.Add(this.rdbtnFemale);
+            this.grpbxGender.Controls.Add(this.rdbtnMale);
+            this.grpbxGender.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.grpbxGender.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpbxGender.Location = new System.Drawing.Point(39, 405);
+            this.grpbxGender.Name = "grpbxGender";
+            this.grpbxGender.Size = new System.Drawing.Size(253, 115);
+            this.grpbxGender.TabIndex = 11;
+            this.grpbxGender.TabStop = false;
+            this.grpbxGender.Text = "Gender:";
+            // 
+            // rdbtnMale
+            // 
+            this.rdbtnMale.AutoSize = true;
+            this.rdbtnMale.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtnMale.Location = new System.Drawing.Point(67, 43);
+            this.rdbtnMale.Name = "rdbtnMale";
+            this.rdbtnMale.Size = new System.Drawing.Size(72, 25);
+            this.rdbtnMale.TabIndex = 0;
+            this.rdbtnMale.TabStop = true;
+            this.rdbtnMale.Text = "Male";
+            this.rdbtnMale.UseVisualStyleBackColor = true;
+            this.rdbtnMale.CheckedChanged += new System.EventHandler(this.rdbtnMale_CheckedChanged);
+            // 
+            // rdbtnFemale
+            // 
+            this.rdbtnFemale.AutoSize = true;
+            this.rdbtnFemale.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtnFemale.Location = new System.Drawing.Point(67, 74);
+            this.rdbtnFemale.Name = "rdbtnFemale";
+            this.rdbtnFemale.Size = new System.Drawing.Size(93, 25);
+            this.rdbtnFemale.TabIndex = 12;
+            this.rdbtnFemale.TabStop = true;
+            this.rdbtnFemale.Text = "Female";
+            this.rdbtnFemale.UseVisualStyleBackColor = true;
+            // 
+            // lblAge
+            // 
+            this.lblAge.AutoSize = true;
+            this.lblAge.BackColor = System.Drawing.Color.Transparent;
+            this.lblAge.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAge.Location = new System.Drawing.Point(573, 200);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(54, 24);
+            this.lblAge.TabIndex = 12;
+            this.lblAge.Text = "Age:";
+            // 
+            // txtbxAge
+            // 
+            this.txtbxAge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbxAge.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxAge.Location = new System.Drawing.Point(577, 227);
+            this.txtbxAge.Name = "txtbxAge";
+            this.txtbxAge.Size = new System.Drawing.Size(344, 31);
+            this.txtbxAge.TabIndex = 13;
+            // 
+            // lblContact
+            // 
+            this.lblContact.AutoSize = true;
+            this.lblContact.BackColor = System.Drawing.Color.Transparent;
+            this.lblContact.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContact.Location = new System.Drawing.Point(573, 267);
+            this.lblContact.Name = "lblContact";
+            this.lblContact.Size = new System.Drawing.Size(118, 21);
+            this.lblContact.TabIndex = 14;
+            this.lblContact.Text = "Contact No:";
+            // 
+            // txtbxContact
+            // 
+            this.txtbxContact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbxContact.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxContact.Location = new System.Drawing.Point(577, 293);
+            this.txtbxContact.Name = "txtbxContact";
+            this.txtbxContact.Size = new System.Drawing.Size(344, 31);
+            this.txtbxContact.TabIndex = 15;
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmail.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Location = new System.Drawing.Point(573, 333);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(78, 24);
+            this.lblEmail.TabIndex = 16;
+            this.lblEmail.Text = "Email:";
+            // 
+            // txtbxEmail
+            // 
+            this.txtbxEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbxEmail.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxEmail.Location = new System.Drawing.Point(577, 360);
+            this.txtbxEmail.Name = "txtbxEmail";
+            this.txtbxEmail.Size = new System.Drawing.Size(344, 31);
+            this.txtbxEmail.TabIndex = 17;
+            // 
+            // lblBodyTemp
+            // 
+            this.lblBodyTemp.AutoSize = true;
+            this.lblBodyTemp.BackColor = System.Drawing.Color.Transparent;
+            this.lblBodyTemp.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBodyTemp.Location = new System.Drawing.Point(998, 212);
+            this.lblBodyTemp.Name = "lblBodyTemp";
+            this.lblBodyTemp.Size = new System.Drawing.Size(121, 21);
+            this.lblBodyTemp.TabIndex = 18;
+            this.lblBodyTemp.Text = "Body Temp:";
+            // 
+            // txtbxBodyTemp
+            // 
+            this.txtbxBodyTemp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbxBodyTemp.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxBodyTemp.Location = new System.Drawing.Point(1000, 236);
+            this.txtbxBodyTemp.Name = "txtbxBodyTemp";
+            this.txtbxBodyTemp.Size = new System.Drawing.Size(204, 31);
+            this.txtbxBodyTemp.TabIndex = 19;
+            // 
+            // txtbxDate
+            // 
+            this.txtbxDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbxDate.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxDate.Location = new System.Drawing.Point(1000, 175);
+            this.txtbxDate.Name = "txtbxDate";
+            this.txtbxDate.Size = new System.Drawing.Size(204, 31);
+            this.txtbxDate.TabIndex = 20;
+            // 
+            // grpbxQ1
+            // 
+            this.grpbxQ1.BackColor = System.Drawing.Color.Transparent;
+            this.grpbxQ1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.grpbxQ1.Controls.Add(this.rdbtnQ1No);
+            this.grpbxQ1.Controls.Add(this.rdbtnQ1Yes);
+            this.grpbxQ1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.grpbxQ1.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpbxQ1.Location = new System.Drawing.Point(39, 556);
+            this.grpbxQ1.Name = "grpbxQ1";
+            this.grpbxQ1.Size = new System.Drawing.Size(460, 131);
+            this.grpbxQ1.TabIndex = 13;
+            this.grpbxQ1.TabStop = false;
+            this.grpbxQ1.Text = "Have you been in a close contact with those who have COVID-19 in the past 2 weeks" +
+    "?";
+            this.grpbxQ1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // rdbtnQ1No
+            // 
+            this.rdbtnQ1No.AutoSize = true;
+            this.rdbtnQ1No.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtnQ1No.Location = new System.Drawing.Point(92, 92);
+            this.rdbtnQ1No.Name = "rdbtnQ1No";
+            this.rdbtnQ1No.Size = new System.Drawing.Size(54, 25);
+            this.rdbtnQ1No.TabIndex = 12;
+            this.rdbtnQ1No.TabStop = true;
+            this.rdbtnQ1No.Text = "No";
+            this.rdbtnQ1No.UseVisualStyleBackColor = true;
+            // 
+            // rdbtnQ1Yes
+            // 
+            this.rdbtnQ1Yes.AutoSize = true;
+            this.rdbtnQ1Yes.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtnQ1Yes.Location = new System.Drawing.Point(92, 61);
+            this.rdbtnQ1Yes.Name = "rdbtnQ1Yes";
+            this.rdbtnQ1Yes.Size = new System.Drawing.Size(61, 25);
+            this.rdbtnQ1Yes.TabIndex = 0;
+            this.rdbtnQ1Yes.TabStop = true;
+            this.rdbtnQ1Yes.Text = "Yes";
+            this.rdbtnQ1Yes.UseVisualStyleBackColor = true;
+            // 
+            // grpbxQ2
+            // 
+            this.grpbxQ2.BackColor = System.Drawing.Color.Transparent;
+            this.grpbxQ2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.grpbxQ2.Controls.Add(this.chckbxSymptoms10);
+            this.grpbxQ2.Controls.Add(this.chckbxSymptoms8);
+            this.grpbxQ2.Controls.Add(this.chckbxSymptoms9);
+            this.grpbxQ2.Controls.Add(this.chckbxSymptoms7);
+            this.grpbxQ2.Controls.Add(this.chckbxSymptoms6);
+            this.grpbxQ2.Controls.Add(this.chckbxSymptoms2);
+            this.grpbxQ2.Controls.Add(this.chckbxSymptoms4);
+            this.grpbxQ2.Controls.Add(this.chckbxSymptoms3);
+            this.grpbxQ2.Controls.Add(this.chckbxSymptoms5);
+            this.grpbxQ2.Controls.Add(this.chckbxSymptoms1);
+            this.grpbxQ2.Controls.Add(this.label1);
+            this.grpbxQ2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.grpbxQ2.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpbxQ2.Location = new System.Drawing.Point(577, 556);
+            this.grpbxQ2.Name = "grpbxQ2";
+            this.grpbxQ2.Size = new System.Drawing.Size(447, 240);
+            this.grpbxQ2.TabIndex = 14;
+            this.grpbxQ2.TabStop = false;
+            this.grpbxQ2.Text = "Do you have any of these symptoms?";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(40, 309);
+            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(17, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 24);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Gender: ";
+            this.label1.Size = new System.Drawing.Size(141, 17);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "(Check all that apply)";
+            // 
+            // chckbxSymptoms1
+            // 
+            this.chckbxSymptoms1.AutoSize = true;
+            this.chckbxSymptoms1.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chckbxSymptoms1.Location = new System.Drawing.Point(35, 64);
+            this.chckbxSymptoms1.Name = "chckbxSymptoms1";
+            this.chckbxSymptoms1.Size = new System.Drawing.Size(79, 25);
+            this.chckbxSymptoms1.TabIndex = 22;
+            this.chckbxSymptoms1.Text = "Fever";
+            this.chckbxSymptoms1.UseVisualStyleBackColor = true;
+            // 
+            // chckbxSymptoms5
+            // 
+            this.chckbxSymptoms5.AutoSize = true;
+            this.chckbxSymptoms5.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chckbxSymptoms5.Location = new System.Drawing.Point(277, 93);
+            this.chckbxSymptoms5.Name = "chckbxSymptoms5";
+            this.chckbxSymptoms5.Size = new System.Drawing.Size(118, 25);
+            this.chckbxSymptoms5.TabIndex = 23;
+            this.chckbxSymptoms5.Text = "Dry cough";
+            this.chckbxSymptoms5.UseVisualStyleBackColor = true;
+            // 
+            // chckbxSymptoms3
+            // 
+            this.chckbxSymptoms3.AutoSize = true;
+            this.chckbxSymptoms3.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chckbxSymptoms3.Location = new System.Drawing.Point(35, 123);
+            this.chckbxSymptoms3.Name = "chckbxSymptoms3";
+            this.chckbxSymptoms3.Size = new System.Drawing.Size(208, 25);
+            this.chckbxSymptoms3.TabIndex = 24;
+            this.chckbxSymptoms3.Text = "Loss of taste or smell";
+            this.chckbxSymptoms3.UseVisualStyleBackColor = true;
+            // 
+            // chckbxSymptoms4
+            // 
+            this.chckbxSymptoms4.AutoSize = true;
+            this.chckbxSymptoms4.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chckbxSymptoms4.Location = new System.Drawing.Point(277, 63);
+            this.chckbxSymptoms4.Name = "chckbxSymptoms4";
+            this.chckbxSymptoms4.Size = new System.Drawing.Size(129, 25);
+            this.chckbxSymptoms4.TabIndex = 25;
+            this.chckbxSymptoms4.Text = "Body aches";
+            this.chckbxSymptoms4.UseVisualStyleBackColor = true;
+            // 
+            // chckbxSymptoms2
+            // 
+            this.chckbxSymptoms2.AutoSize = true;
+            this.chckbxSymptoms2.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chckbxSymptoms2.Location = new System.Drawing.Point(35, 93);
+            this.chckbxSymptoms2.Name = "chckbxSymptoms2";
+            this.chckbxSymptoms2.Size = new System.Drawing.Size(206, 25);
+            this.chckbxSymptoms2.TabIndex = 26;
+            this.chckbxSymptoms2.Text = "Breathing difficulties";
+            this.chckbxSymptoms2.UseVisualStyleBackColor = true;
+            this.chckbxSymptoms2.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            // 
+            // chckbxSymptoms6
+            // 
+            this.chckbxSymptoms6.AutoSize = true;
+            this.chckbxSymptoms6.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chckbxSymptoms6.Location = new System.Drawing.Point(277, 121);
+            this.chckbxSymptoms6.Name = "chckbxSymptoms6";
+            this.chckbxSymptoms6.Size = new System.Drawing.Size(125, 25);
+            this.chckbxSymptoms6.TabIndex = 27;
+            this.chckbxSymptoms6.Text = "Sore throat";
+            this.chckbxSymptoms6.UseVisualStyleBackColor = true;
+            // 
+            // lblDateFormat
+            // 
+            this.lblDateFormat.AutoSize = true;
+            this.lblDateFormat.BackColor = System.Drawing.Color.Transparent;
+            this.lblDateFormat.Font = new System.Drawing.Font("Bookman Old Style", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateFormat.Location = new System.Drawing.Point(1050, 153);
+            this.lblDateFormat.Name = "lblDateFormat";
+            this.lblDateFormat.Size = new System.Drawing.Size(114, 17);
+            this.lblDateFormat.TabIndex = 21;
+            this.lblDateFormat.Text = "(mm / dd / yyyy)";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Bookman Old Style", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(115, 205);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(146, 17);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "(First Name, Surname)";
+            // 
+            // grpbxQ4
+            // 
+            this.grpbxQ4.BackColor = System.Drawing.Color.Transparent;
+            this.grpbxQ4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.grpbxQ4.Controls.Add(this.grpbxQ3);
+            this.grpbxQ4.Controls.Add(this.radioButton1);
+            this.grpbxQ4.Controls.Add(this.radioButton2);
+            this.grpbxQ4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.grpbxQ4.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpbxQ4.Location = new System.Drawing.Point(39, 720);
+            this.grpbxQ4.Name = "grpbxQ4";
+            this.grpbxQ4.Size = new System.Drawing.Size(355, 140);
+            this.grpbxQ4.TabIndex = 14;
+            this.grpbxQ4.TabStop = false;
+            this.grpbxQ4.Text = "Have you been vaccinated?";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(59, 71);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(154, 25);
+            this.radioButton1.TabIndex = 12;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "First dose only";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_1);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(59, 40);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(202, 25);
+            this.radioButton2.TabIndex = 0;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Yes, fully vaccinated";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // grpbxQ3
+            // 
+            this.grpbxQ3.AutoSize = true;
+            this.grpbxQ3.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpbxQ3.Location = new System.Drawing.Point(59, 100);
+            this.grpbxQ3.Name = "grpbxQ3";
+            this.grpbxQ3.Size = new System.Drawing.Size(237, 25);
+            this.grpbxQ3.TabIndex = 13;
+            this.grpbxQ3.TabStop = true;
+            this.grpbxQ3.Text = "Haven\'t been vaccinated";
+            this.grpbxQ3.UseVisualStyleBackColor = true;
+            // 
+            // chckbxSymptoms7
+            // 
+            this.chckbxSymptoms7.AutoSize = true;
+            this.chckbxSymptoms7.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chckbxSymptoms7.Location = new System.Drawing.Point(35, 154);
+            this.chckbxSymptoms7.Name = "chckbxSymptoms7";
+            this.chckbxSymptoms7.Size = new System.Drawing.Size(132, 25);
+            this.chckbxSymptoms7.TabIndex = 28;
+            this.chckbxSymptoms7.Text = "Runny nose";
+            this.chckbxSymptoms7.UseVisualStyleBackColor = true;
+            // 
+            // chckbxSymptoms9
+            // 
+            this.chckbxSymptoms9.AutoSize = true;
+            this.chckbxSymptoms9.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chckbxSymptoms9.Location = new System.Drawing.Point(277, 152);
+            this.chckbxSymptoms9.Name = "chckbxSymptoms9";
+            this.chckbxSymptoms9.Size = new System.Drawing.Size(117, 25);
+            this.chckbxSymptoms9.TabIndex = 29;
+            this.chckbxSymptoms9.Text = "Headache";
+            this.chckbxSymptoms9.UseVisualStyleBackColor = true;
+            this.chckbxSymptoms9.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // chckbxSymptoms8
+            // 
+            this.chckbxSymptoms8.AutoSize = true;
+            this.chckbxSymptoms8.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chckbxSymptoms8.Location = new System.Drawing.Point(35, 185);
+            this.chckbxSymptoms8.Name = "chckbxSymptoms8";
+            this.chckbxSymptoms8.Size = new System.Drawing.Size(106, 25);
+            this.chckbxSymptoms8.TabIndex = 30;
+            this.chckbxSymptoms8.Text = "Diarrhea";
+            this.chckbxSymptoms8.UseVisualStyleBackColor = true;
+            // 
+            // chckbxSymptoms10
+            // 
+            this.chckbxSymptoms10.AutoSize = true;
+            this.chckbxSymptoms10.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chckbxSymptoms10.Location = new System.Drawing.Point(277, 183);
+            this.chckbxSymptoms10.Name = "chckbxSymptoms10";
+            this.chckbxSymptoms10.Size = new System.Drawing.Size(76, 25);
+            this.chckbxSymptoms10.TabIndex = 31;
+            this.chckbxSymptoms10.Text = "None";
+            this.chckbxSymptoms10.UseVisualStyleBackColor = true;
             // 
             // txtbxName
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Contact_Tracing.Properties.Resources.white_bg;
-            this.ClientSize = new System.Drawing.Size(1352, 737);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtbxAddress);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.Address);
-            this.Controls.Add(this.lblName);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1286, 889);
+            this.Controls.Add(this.grpbxQ4);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblDateFormat);
+            this.Controls.Add(this.grpbxQ2);
+            this.Controls.Add(this.grpbxQ1);
+            this.Controls.Add(this.txtbxDate);
+            this.Controls.Add(this.txtbxBodyTemp);
+            this.Controls.Add(this.lblBodyTemp);
+            this.Controls.Add(this.txtbxEmail);
+            this.Controls.Add(this.lblEmail);
+            this.Controls.Add(this.txtbxContact);
+            this.Controls.Add(this.lblContact);
+            this.Controls.Add(this.txtbxAge);
+            this.Controls.Add(this.lblAge);
+            this.Controls.Add(this.grpbxGender);
+            this.Controls.Add(this.txtbxAddress);
+            this.Controls.Add(this.txtbxName1);
+            this.Controls.Add(this.lblAddress);
+            this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblPrvcyNtc3);
             this.Controls.Add(this.lblPrvcyNtc2);
@@ -199,7 +619,16 @@
             this.Name = "txtbxName";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.txtbxName_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxLogo)).EndInit();
+            this.grpbxGender.ResumeLayout(false);
+            this.grpbxGender.PerformLayout();
+            this.grpbxQ1.ResumeLayout(false);
+            this.grpbxQ1.PerformLayout();
+            this.grpbxQ2.ResumeLayout(false);
+            this.grpbxQ2.PerformLayout();
+            this.grpbxQ4.ResumeLayout(false);
+            this.grpbxQ4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,12 +642,43 @@
         private System.Windows.Forms.Label lblPrvcyNtc2;
         private System.Windows.Forms.Label lblPrvcyNtc3;
         private System.Windows.Forms.Label lblDate;
-        private System.Windows.Forms.Label lblDateFormat;
         private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.Label Address;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.TextBox txtbxName1;
         private System.Windows.Forms.TextBox txtbxAddress;
+        private System.Windows.Forms.GroupBox grpbxGender;
+        private System.Windows.Forms.RadioButton rdbtnFemale;
+        private System.Windows.Forms.RadioButton rdbtnMale;
+        private System.Windows.Forms.Label lblAge;
+        private System.Windows.Forms.TextBox txtbxAge;
+        private System.Windows.Forms.Label lblContact;
+        private System.Windows.Forms.TextBox txtbxContact;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.TextBox txtbxEmail;
+        private System.Windows.Forms.Label lblBodyTemp;
+        private System.Windows.Forms.TextBox txtbxBodyTemp;
+        private System.Windows.Forms.TextBox txtbxDate;
+        private System.Windows.Forms.GroupBox grpbxQ1;
+        private System.Windows.Forms.RadioButton rdbtnQ1No;
+        private System.Windows.Forms.RadioButton rdbtnQ1Yes;
+        private System.Windows.Forms.GroupBox grpbxQ2;
+        private System.Windows.Forms.CheckBox chckbxSymptoms2;
+        private System.Windows.Forms.CheckBox chckbxSymptoms4;
+        private System.Windows.Forms.CheckBox chckbxSymptoms3;
+        private System.Windows.Forms.CheckBox chckbxSymptoms5;
+        private System.Windows.Forms.CheckBox chckbxSymptoms1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox chckbxSymptoms6;
+        private System.Windows.Forms.Label lblDateFormat;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox grpbxQ4;
+        private System.Windows.Forms.RadioButton grpbxQ3;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.CheckBox chckbxSymptoms8;
+        private System.Windows.Forms.CheckBox chckbxSymptoms9;
+        private System.Windows.Forms.CheckBox chckbxSymptoms7;
+        private System.Windows.Forms.CheckBox chckbxSymptoms10;
     }
 }
 
