@@ -164,6 +164,8 @@ namespace Contact_Tracing
 
             information.WriteLine("");
             information.Close();
+
+            Application.Restart();
         }
 
         private void grpbxGender_Enter(object sender, EventArgs e)
@@ -179,6 +181,7 @@ namespace Contact_Tracing
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            
             this.Close();
         }
     }
