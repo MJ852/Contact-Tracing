@@ -69,9 +69,9 @@
             this.lblDateFormat = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.grpbxQ4 = new System.Windows.Forms.GroupBox();
-            this.grpbxQ3 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rdbtnVaccinationNo = new System.Windows.Forms.RadioButton();
+            this.rdbtnVaccinationFirstdose = new System.Windows.Forms.RadioButton();
+            this.rdbtnVaccinationYes = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -583,9 +583,9 @@
             // 
             this.grpbxQ4.BackColor = System.Drawing.Color.Transparent;
             this.grpbxQ4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.grpbxQ4.Controls.Add(this.grpbxQ3);
-            this.grpbxQ4.Controls.Add(this.radioButton1);
-            this.grpbxQ4.Controls.Add(this.radioButton2);
+            this.grpbxQ4.Controls.Add(this.rdbtnVaccinationNo);
+            this.grpbxQ4.Controls.Add(this.rdbtnVaccinationFirstdose);
+            this.grpbxQ4.Controls.Add(this.rdbtnVaccinationYes);
             this.grpbxQ4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.grpbxQ4.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpbxQ4.Location = new System.Drawing.Point(29, 587);
@@ -597,45 +597,45 @@
             this.grpbxQ4.TabStop = false;
             this.grpbxQ4.Text = "Have you been vaccinated?";
             // 
-            // grpbxQ3
+            // rdbtnVaccinationNo
             // 
-            this.grpbxQ3.AutoSize = true;
-            this.grpbxQ3.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpbxQ3.Location = new System.Drawing.Point(44, 81);
-            this.grpbxQ3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.grpbxQ3.Name = "grpbxQ3";
-            this.grpbxQ3.Size = new System.Drawing.Size(197, 23);
-            this.grpbxQ3.TabIndex = 13;
-            this.grpbxQ3.TabStop = true;
-            this.grpbxQ3.Text = "Haven\'t been vaccinated";
-            this.grpbxQ3.UseVisualStyleBackColor = true;
+            this.rdbtnVaccinationNo.AutoSize = true;
+            this.rdbtnVaccinationNo.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtnVaccinationNo.Location = new System.Drawing.Point(44, 81);
+            this.rdbtnVaccinationNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbtnVaccinationNo.Name = "rdbtnVaccinationNo";
+            this.rdbtnVaccinationNo.Size = new System.Drawing.Size(197, 23);
+            this.rdbtnVaccinationNo.TabIndex = 13;
+            this.rdbtnVaccinationNo.TabStop = true;
+            this.rdbtnVaccinationNo.Text = "Haven\'t been vaccinated";
+            this.rdbtnVaccinationNo.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdbtnVaccinationFirstdose
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(44, 58);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(130, 23);
-            this.radioButton1.TabIndex = 12;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "First dose only";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_1);
+            this.rdbtnVaccinationFirstdose.AutoSize = true;
+            this.rdbtnVaccinationFirstdose.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtnVaccinationFirstdose.Location = new System.Drawing.Point(44, 58);
+            this.rdbtnVaccinationFirstdose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbtnVaccinationFirstdose.Name = "rdbtnVaccinationFirstdose";
+            this.rdbtnVaccinationFirstdose.Size = new System.Drawing.Size(130, 23);
+            this.rdbtnVaccinationFirstdose.TabIndex = 12;
+            this.rdbtnVaccinationFirstdose.TabStop = true;
+            this.rdbtnVaccinationFirstdose.Text = "First dose only";
+            this.rdbtnVaccinationFirstdose.UseVisualStyleBackColor = true;
+            this.rdbtnVaccinationFirstdose.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_1);
             // 
-            // radioButton2
+            // rdbtnVaccinationYes
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(44, 32);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(171, 23);
-            this.radioButton2.TabIndex = 0;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Yes, fully vaccinated";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbtnVaccinationYes.AutoSize = true;
+            this.rdbtnVaccinationYes.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtnVaccinationYes.Location = new System.Drawing.Point(44, 32);
+            this.rdbtnVaccinationYes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbtnVaccinationYes.Name = "rdbtnVaccinationYes";
+            this.rdbtnVaccinationYes.Size = new System.Drawing.Size(171, 23);
+            this.rdbtnVaccinationYes.TabIndex = 0;
+            this.rdbtnVaccinationYes.TabStop = true;
+            this.rdbtnVaccinationYes.Text = "Yes, fully vaccinated";
+            this.rdbtnVaccinationYes.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -695,6 +695,7 @@
             this.btnExit.TabIndex = 28;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // txtbxName
             // 
@@ -791,9 +792,9 @@
         private System.Windows.Forms.Label lblDateFormat;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox grpbxQ4;
-        private System.Windows.Forms.RadioButton grpbxQ3;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rdbtnVaccinationNo;
+        private System.Windows.Forms.RadioButton rdbtnVaccinationFirstdose;
+        private System.Windows.Forms.RadioButton rdbtnVaccinationYes;
         private System.Windows.Forms.CheckBox chckbxSymptoms8;
         private System.Windows.Forms.CheckBox chckbxSymptoms9;
         private System.Windows.Forms.CheckBox chckbxSymptoms7;
