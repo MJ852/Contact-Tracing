@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,8 @@ namespace Contact_Tracing
         {
             InitializeComponent();
         }
+
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -32,17 +35,7 @@ namespace Contact_Tracing
 
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void rdbtnMale_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblDateFormat_Click(object sender, EventArgs e)
         {
 
         }
@@ -75,6 +68,21 @@ namespace Contact_Tracing
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            StreamWriter information = File.AppendText(@"C:\Users\Joyce Calangian\Documents\MJ\PUP\SUBJECTS\Health Information.txt");
+            information.WriteLine("Date: " + txtbxDate.Text);
+            information.WriteLine("Name: " + txtbxName1.Text);
+            information.WriteLine("Address: " + txtbxAddress.Text);
+            information.WriteLine("Age: " + txtbxAge.Text);
+            information.WriteLine("Contact Number: " + txtbxContact.Text);
+            information.WriteLine("Email: " + txtbxEmail.Text);
+            information.WriteLine("Sex: " + txtbx);
+            information.WriteLine("");
+            information.Close();
+            
         }
     }
 }
