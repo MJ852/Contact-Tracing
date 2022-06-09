@@ -75,6 +75,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxLogo)).BeginInit();
             this.grpbxGender.SuspendLayout();
             this.grpbxQ1.SuspendLayout();
@@ -220,6 +222,7 @@
             this.grpbxGender.Size = new System.Drawing.Size(235, 65);
             this.grpbxGender.TabIndex = 11;
             this.grpbxGender.TabStop = false;
+            this.grpbxGender.Enter += new System.EventHandler(this.grpbxGender_Enter);
             // 
             // rdbtnFemale
             // 
@@ -253,7 +256,7 @@
             this.lblAge.AutoSize = true;
             this.lblAge.BackColor = System.Drawing.Color.Transparent;
             this.lblAge.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAge.Location = new System.Drawing.Point(430, 203);
+            this.lblAge.Location = new System.Drawing.Point(422, 233);
             this.lblAge.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(44, 19);
@@ -264,7 +267,7 @@
             // 
             this.txtbxAge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbxAge.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbxAge.Location = new System.Drawing.Point(433, 225);
+            this.txtbxAge.Location = new System.Drawing.Point(425, 255);
             this.txtbxAge.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtbxAge.Name = "txtbxAge";
             this.txtbxAge.Size = new System.Drawing.Size(258, 26);
@@ -275,7 +278,7 @@
             this.lblContact.AutoSize = true;
             this.lblContact.BackColor = System.Drawing.Color.Transparent;
             this.lblContact.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContact.Location = new System.Drawing.Point(430, 258);
+            this.lblContact.Location = new System.Drawing.Point(422, 288);
             this.lblContact.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblContact.Name = "lblContact";
             this.lblContact.Size = new System.Drawing.Size(100, 18);
@@ -286,7 +289,7 @@
             // 
             this.txtbxContact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbxContact.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbxContact.Location = new System.Drawing.Point(433, 279);
+            this.txtbxContact.Location = new System.Drawing.Point(425, 309);
             this.txtbxContact.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtbxContact.Name = "txtbxContact";
             this.txtbxContact.Size = new System.Drawing.Size(258, 26);
@@ -297,7 +300,7 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.BackColor = System.Drawing.Color.Transparent;
             this.lblEmail.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(430, 312);
+            this.lblEmail.Location = new System.Drawing.Point(422, 342);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(62, 19);
@@ -308,7 +311,7 @@
             // 
             this.txtbxEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbxEmail.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbxEmail.Location = new System.Drawing.Point(433, 333);
+            this.txtbxEmail.Location = new System.Drawing.Point(425, 363);
             this.txtbxEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtbxEmail.Name = "txtbxEmail";
             this.txtbxEmail.Size = new System.Drawing.Size(258, 26);
@@ -319,7 +322,7 @@
             this.lblBodyTemp.AutoSize = true;
             this.lblBodyTemp.BackColor = System.Drawing.Color.Transparent;
             this.lblBodyTemp.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBodyTemp.Location = new System.Drawing.Point(433, 363);
+            this.lblBodyTemp.Location = new System.Drawing.Point(423, 185);
             this.lblBodyTemp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBodyTemp.Name = "lblBodyTemp";
             this.lblBodyTemp.Size = new System.Drawing.Size(100, 18);
@@ -330,7 +333,7 @@
             // 
             this.txtbxBodyTemp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbxBodyTemp.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbxBodyTemp.Location = new System.Drawing.Point(435, 383);
+            this.txtbxBodyTemp.Location = new System.Drawing.Point(425, 205);
             this.txtbxBodyTemp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtbxBodyTemp.Name = "txtbxBodyTemp";
             this.txtbxBodyTemp.Size = new System.Drawing.Size(256, 26);
@@ -354,7 +357,7 @@
             this.grpbxQ1.Controls.Add(this.rdbtnQ1Yes);
             this.grpbxQ1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.grpbxQ1.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpbxQ1.Location = new System.Drawing.Point(29, 448);
+            this.grpbxQ1.Location = new System.Drawing.Point(25, 477);
             this.grpbxQ1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpbxQ1.Name = "grpbxQ1";
             this.grpbxQ1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -390,6 +393,7 @@
             this.rdbtnQ1Yes.TabStop = true;
             this.rdbtnQ1Yes.Text = "Yes";
             this.rdbtnQ1Yes.UseVisualStyleBackColor = true;
+            this.rdbtnQ1Yes.CheckedChanged += new System.EventHandler(this.rdbtnQ1Yes_CheckedChanged);
             // 
             // grpbxQ2
             // 
@@ -408,7 +412,7 @@
             this.grpbxQ2.Controls.Add(this.label1);
             this.grpbxQ2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.grpbxQ2.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpbxQ2.Location = new System.Drawing.Point(409, 455);
+            this.grpbxQ2.Location = new System.Drawing.Point(409, 468);
             this.grpbxQ2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpbxQ2.Name = "grpbxQ2";
             this.grpbxQ2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -584,7 +588,7 @@
             this.grpbxQ4.Controls.Add(this.radioButton2);
             this.grpbxQ4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.grpbxQ4.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpbxQ4.Location = new System.Drawing.Point(29, 569);
+            this.grpbxQ4.Location = new System.Drawing.Point(29, 587);
             this.grpbxQ4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpbxQ4.Name = "grpbxQ4";
             this.grpbxQ4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -649,9 +653,9 @@
             // 
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSave.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(690, 665);
+            this.btnSave.Location = new System.Drawing.Point(685, 674);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(140, 36);
+            this.btnSave.Size = new System.Drawing.Size(86, 36);
             this.btnSave.TabIndex = 25;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -669,12 +673,37 @@
             this.label4.TabIndex = 26;
             this.label4.Text = "Personal Information";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Bookman Old Style", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(13, 447);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(173, 19);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "Health Information";
+            // 
+            // btnExit
+            // 
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExit.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(777, 674);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(81, 36);
+            this.btnExit.TabIndex = 28;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            // 
             // txtbxName
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(886, 722);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label3);
@@ -772,6 +801,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 

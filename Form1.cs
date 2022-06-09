@@ -79,9 +79,38 @@ namespace Contact_Tracing
             information.WriteLine("Age: " + txtbxAge.Text);
             information.WriteLine("Contact Number: " + txtbxContact.Text);
             information.WriteLine("Email: " + txtbxEmail.Text);
-            information.WriteLine("Sex: " + txtbx);
+            information.WriteLine("Body Temp:  " + txtbxBodyTemp.Text);
+
+            if (rdbtnMale.Checked)
+            {
+                information.WriteLine("Sex: Male");
+            }
+            else
+            {
+                information.WriteLine("Sex: Female");
+            }
+
+            if(rdbtnQ1Yes.Checked)
+            {
+                information.WriteLine("Close contact w/ COVID within two weeks: Yes");
+            }
+            else
+            {
+                information.WriteLine("Close contact w/ COVID within two weeks: No");
+            }
+
             information.WriteLine("");
             information.Close();
+        }
+
+        private void grpbxGender_Enter(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void rdbtnQ1Yes_CheckedChanged(object sender, EventArgs e)
+        {
             
         }
     }
