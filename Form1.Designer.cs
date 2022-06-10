@@ -636,6 +636,7 @@
             this.rdbtnVaccinationYes.TabStop = true;
             this.rdbtnVaccinationYes.Text = "Yes, fully vaccinated";
             this.rdbtnVaccinationYes.UseVisualStyleBackColor = true;
+            this.rdbtnVaccinationYes.CheckedChanged += new System.EventHandler(this.rdbtnVaccinationYes_CheckedChanged);
             // 
             // label3
             // 
@@ -702,7 +703,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(886, 722);
+            this.ClientSize = new System.Drawing.Size(886, 687);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -738,6 +739,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "txtbxName";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Health Form";
             this.Load += new System.EventHandler(this.txtbxName_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxLogo)).EndInit();

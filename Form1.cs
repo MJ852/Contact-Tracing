@@ -13,6 +13,7 @@ namespace Contact_Tracing
 {
     public partial class txtbxName : Form
     {
+
         public txtbxName()
         {
             InitializeComponent();
@@ -81,6 +82,7 @@ namespace Contact_Tracing
             information.WriteLine("Email: " + txtbxEmail.Text);
             information.WriteLine("Body Temp:  " + txtbxBodyTemp.Text);
 
+            //Sex
             if (rdbtnMale.Checked)
             {
                 information.WriteLine("Sex: Male");
@@ -90,6 +92,7 @@ namespace Contact_Tracing
                 information.WriteLine("Sex: Female");
             }
 
+            //Question 1
             if (rdbtnQ1Yes.Checked)
             {
                 information.WriteLine("Close contact w/ COVID within two weeks: Yes");
@@ -99,67 +102,75 @@ namespace Contact_Tracing
                 information.WriteLine("Close contact w/ COVID within two weeks: No");
             }
 
-
+            //Vaccination status
             if (rdbtnVaccinationYes.Checked)
             {
                 information.WriteLine("Vaccination Status: Fully Vaccinated");
+
             }
-            if (rdbtnVaccinationFirstdose.Checked)
+
+
+            else if (rdbtnVaccinationFirstdose.Checked)
             {
                 information.WriteLine("Vaccination Status: First dose only");
             }
-            else
+
+            else if (rdbtnVaccinationNo.Checked)
             {
-                information.WriteLine("Vaccination Status: No vaccine");
+                information.WriteLine("Vaccination Status: Not yet vaccinated");
             }
+        
 
-            information.WriteLine("Symptoms: ");
+            //Symptoms
+            information.WriteLine("Symptoms: "  );
 
+            
             if (chckbxSymptoms1.Checked)
             {
                 information.WriteLine("Fever");
+            }
 
-              if (chckbxSymptoms2.Checked)
-                {
-                    information.WriteLine("Breathing difficulties");
-                }
-                if (chckbxSymptoms3.Checked)
-                {
-                    information.WriteLine("Loss of taste or smell");
-                }
-                if (chckbxSymptoms4.Checked)
-                {
-                    information.WriteLine("Body aches");
-                }
-                if (chckbxSymptoms5.Checked)
-                {
-                    information.WriteLine("Dry cough");
-                }
-                if (chckbxSymptoms6.Checked)
-                {
-                    information.WriteLine("Sore throat");
-
-                }
-                if (chckbxSymptoms7.Checked)
-                {
-                    information.WriteLine("Runny nose");
-
-                }
-                if (chckbxSymptoms8.Checked)
-                {
-                    information.WriteLine("Diarrhea");
-                }
-                if (chckbxSymptoms9.Checked)
-                {
-                    information.WriteLine("Headache");
-                }
-
-                else 
-                {
-                    information.WriteLine("None");
-                }
+             if (chckbxSymptoms2.Checked)
+            {
+                information.WriteLine("Breathing difficulties");
+            }
+            if (chckbxSymptoms3.Checked)
+            {
+                information.WriteLine("Loss of taste or smell");
+            }
+            if (chckbxSymptoms4.Checked)
+            {
+                information.WriteLine("Body aches");
+            }
+            if (chckbxSymptoms5.Checked)
+            {
+                information.WriteLine("Dry cough");
+            }
+            if (chckbxSymptoms6.Checked)
+            {
+                information.WriteLine("Sore throat");
 
             }
+            if (chckbxSymptoms7.Checked)
+            {
+                information.WriteLine("Runny nose");
+
+            }
+            if (chckbxSymptoms8.Checked)
+            {
+                information.WriteLine("Diarrhea");
+            }
+            if (chckbxSymptoms9.Checked)
+            {
+                information.WriteLine("Headache");
+            }
+
+            if  (chckbxSymptoms10.Checked)
+                {
+                information.WriteLine("None");
+            }
+
+            
             
 
             information.WriteLine("");
@@ -183,6 +194,12 @@ namespace Contact_Tracing
         {
             
             this.Close();
+        }
+
+        private void rdbtnVaccinationYes_CheckedChanged(object sender, EventArgs e)
+        {
+            
+
         }
     }
 }
