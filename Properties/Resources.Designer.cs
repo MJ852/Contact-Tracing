@@ -63,6 +63,16 @@ namespace Contact_Tracing.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1655430101751 {
+            get {
+                object obj = ResourceManager.GetObject("1655430101751", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap white_bg {
             get {
                 object obj = ResourceManager.GetObject("white bg", resourceCulture);
@@ -76,6 +86,76 @@ namespace Contact_Tracing.Properties {
         internal static System.Drawing.Bitmap White_Pastel_Drawings__1_ {
             get {
                 object obj = ResourceManager.GetObject("White Pastel Drawings (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap White_Pastel_Drawings__2_ {
+            get {
+                object obj = ResourceManager.GetObject("White Pastel Drawings (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap White_Pastel_Drawings__3_ {
+            get {
+                object obj = ResourceManager.GetObject("White Pastel Drawings (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap White_Pastel_Drawings__4_ {
+            get {
+                object obj = ResourceManager.GetObject("White Pastel Drawings (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap White_Pastel_Drawings__5_ {
+            get {
+                object obj = ResourceManager.GetObject("White Pastel Drawings (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap White_Pastel_Drawings__6_ {
+            get {
+                object obj = ResourceManager.GetObject("White Pastel Drawings (6)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap White_Pastel_Drawings__7_ {
+            get {
+                object obj = ResourceManager.GetObject("White Pastel Drawings (7)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap White_Pastel_Drawings__8_ {
+            get {
+                object obj = ResourceManager.GetObject("White Pastel Drawings (8)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

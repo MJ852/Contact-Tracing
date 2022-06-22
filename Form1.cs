@@ -201,5 +201,10 @@ namespace Contact_Tracing
             
 
         }
+
+        private void lnklblForm2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new Form2().Show();
+        }
     }
 }

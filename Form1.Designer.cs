@@ -77,21 +77,41 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
+            this.pnl1name = new System.Windows.Forms.Panel();
+            this.pnlAddress = new System.Windows.Forms.Panel();
+            this.pnlBodyTemp = new System.Windows.Forms.Panel();
+            this.pnlAge = new System.Windows.Forms.Panel();
+            this.pnlContact = new System.Windows.Forms.Panel();
+            this.pnlEmail = new System.Windows.Forms.Panel();
+            this.pnlDate = new System.Windows.Forms.Panel();
+            this.IconName = new System.Windows.Forms.PictureBox();
+            this.IconAddress = new System.Windows.Forms.PictureBox();
+            this.IconTemp = new System.Windows.Forms.PictureBox();
+            this.IconAge = new System.Windows.Forms.PictureBox();
+            this.IconContact = new System.Windows.Forms.PictureBox();
+            this.IconEmail = new System.Windows.Forms.PictureBox();
+            this.lnklblForm2 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxLogo)).BeginInit();
             this.grpbxGender.SuspendLayout();
             this.grpbxQ1.SuspendLayout();
             this.grpbxQ2.SuspendLayout();
             this.grpbxQ4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IconName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconAddress)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconTemp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconAge)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconContact)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconEmail)).BeginInit();
             this.SuspendLayout();
             // 
             // pctrbxLogo
             // 
             this.pctrbxLogo.BackColor = System.Drawing.Color.Transparent;
             this.pctrbxLogo.Image = global::Contact_Tracing.Properties.Resources.White_Pastel_Drawings_3;
-            this.pctrbxLogo.Location = new System.Drawing.Point(17, 7);
-            this.pctrbxLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pctrbxLogo.Location = new System.Drawing.Point(23, 9);
+            this.pctrbxLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pctrbxLogo.Name = "pctrbxLogo";
-            this.pctrbxLogo.Size = new System.Drawing.Size(128, 122);
+            this.pctrbxLogo.Size = new System.Drawing.Size(171, 150);
             this.pctrbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctrbxLogo.TabIndex = 0;
             this.pctrbxLogo.TabStop = false;
@@ -101,10 +121,9 @@
             this.lblPrivacyNotice.AutoSize = true;
             this.lblPrivacyNotice.BackColor = System.Drawing.Color.Transparent;
             this.lblPrivacyNotice.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrivacyNotice.Location = new System.Drawing.Point(152, 83);
-            this.lblPrivacyNotice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPrivacyNotice.Location = new System.Drawing.Point(203, 102);
             this.lblPrivacyNotice.Name = "lblPrivacyNotice";
-            this.lblPrivacyNotice.Size = new System.Drawing.Size(121, 18);
+            this.lblPrivacyNotice.Size = new System.Drawing.Size(142, 21);
             this.lblPrivacyNotice.TabIndex = 1;
             this.lblPrivacyNotice.Text = "Privacy Notice";
             this.lblPrivacyNotice.Click += new System.EventHandler(this.label1_Click);
@@ -114,10 +133,9 @@
             this.lblContact_Tracing.AutoSize = true;
             this.lblContact_Tracing.BackColor = System.Drawing.Color.Transparent;
             this.lblContact_Tracing.Font = new System.Drawing.Font("Bookman Old Style", 37.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContact_Tracing.Location = new System.Drawing.Point(144, 18);
-            this.lblContact_Tracing.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblContact_Tracing.Location = new System.Drawing.Point(192, 22);
             this.lblContact_Tracing.Name = "lblContact_Tracing";
-            this.lblContact_Tracing.Size = new System.Drawing.Size(530, 58);
+            this.lblContact_Tracing.Size = new System.Drawing.Size(652, 71);
             this.lblContact_Tracing.TabIndex = 2;
             this.lblContact_Tracing.Text = "CONTACT TRACING";
             this.lblContact_Tracing.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -127,10 +145,9 @@
             this.lblPrvcyNtc2.AutoSize = true;
             this.lblPrvcyNtc2.BackColor = System.Drawing.Color.Transparent;
             this.lblPrvcyNtc2.Font = new System.Drawing.Font("Bookman Old Style", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrvcyNtc2.Location = new System.Drawing.Point(167, 102);
-            this.lblPrvcyNtc2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPrvcyNtc2.Location = new System.Drawing.Point(223, 126);
             this.lblPrvcyNtc2.Name = "lblPrvcyNtc2";
-            this.lblPrvcyNtc2.Size = new System.Drawing.Size(577, 15);
+            this.lblPrvcyNtc2.Size = new System.Drawing.Size(672, 18);
             this.lblPrvcyNtc2.TabIndex = 3;
             this.lblPrvcyNtc2.Text = "Please answer the question below honestly and cooperate with us so that we can en" +
     "sure your safety. ";
@@ -140,10 +157,9 @@
             this.lblPrvcyNtc3.AutoSize = true;
             this.lblPrvcyNtc3.BackColor = System.Drawing.Color.Transparent;
             this.lblPrvcyNtc3.Font = new System.Drawing.Font("Bookman Old Style", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrvcyNtc3.Location = new System.Drawing.Point(167, 117);
-            this.lblPrvcyNtc3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPrvcyNtc3.Location = new System.Drawing.Point(223, 144);
             this.lblPrvcyNtc3.Name = "lblPrvcyNtc3";
-            this.lblPrvcyNtc3.Size = new System.Drawing.Size(355, 15);
+            this.lblPrvcyNtc3.Size = new System.Drawing.Size(407, 18);
             this.lblPrvcyNtc3.TabIndex = 4;
             this.lblPrvcyNtc3.Text = "All of the details you provide in this form will be kept private.";
             // 
@@ -152,10 +168,9 @@
             this.lblDate.AutoSize = true;
             this.lblDate.BackColor = System.Drawing.Color.Transparent;
             this.lblDate.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(614, 138);
-            this.lblDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDate.Location = new System.Drawing.Point(819, 166);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(49, 18);
+            this.lblDate.Size = new System.Drawing.Size(58, 21);
             this.lblDate.TabIndex = 5;
             this.lblDate.Text = "Date:";
             this.lblDate.Click += new System.EventHandler(this.lblDate_Click);
@@ -165,10 +180,9 @@
             this.lblName.AutoSize = true;
             this.lblName.BackColor = System.Drawing.Color.Transparent;
             this.lblName.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(29, 203);
-            this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblName.Location = new System.Drawing.Point(39, 250);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(60, 19);
+            this.lblName.Size = new System.Drawing.Size(75, 24);
             this.lblName.TabIndex = 7;
             this.lblName.Text = "Name:";
             // 
@@ -177,33 +191,32 @@
             this.lblAddress.AutoSize = true;
             this.lblAddress.BackColor = System.Drawing.Color.Transparent;
             this.lblAddress.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(30, 256);
-            this.lblAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAddress.Location = new System.Drawing.Point(40, 318);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(78, 19);
+            this.lblAddress.Size = new System.Drawing.Size(95, 24);
             this.lblAddress.TabIndex = 8;
             this.lblAddress.Text = "Address:";
             this.lblAddress.Click += new System.EventHandler(this.lblAddress_Click);
             // 
             // txtbxName1
             // 
-            this.txtbxName1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbxName1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtbxName1.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbxName1.Location = new System.Drawing.Point(33, 225);
-            this.txtbxName1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbxName1.Location = new System.Drawing.Point(97, 277);
+            this.txtbxName1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtbxName1.Name = "txtbxName1";
-            this.txtbxName1.Size = new System.Drawing.Size(342, 26);
+            this.txtbxName1.Size = new System.Drawing.Size(402, 24);
             this.txtbxName1.TabIndex = 9;
             // 
             // txtbxAddress
             // 
-            this.txtbxAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbxAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtbxAddress.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbxAddress.Location = new System.Drawing.Point(32, 279);
-            this.txtbxAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbxAddress.Location = new System.Drawing.Point(99, 343);
+            this.txtbxAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtbxAddress.Multiline = true;
             this.txtbxAddress.Name = "txtbxAddress";
-            this.txtbxAddress.Size = new System.Drawing.Size(342, 52);
+            this.txtbxAddress.Size = new System.Drawing.Size(399, 41);
             this.txtbxAddress.TabIndex = 10;
             this.txtbxAddress.TextChanged += new System.EventHandler(this.txtbxAddress_TextChanged);
             // 
@@ -215,11 +228,11 @@
             this.grpbxGender.Controls.Add(this.rdbtnMale);
             this.grpbxGender.Cursor = System.Windows.Forms.Cursors.Hand;
             this.grpbxGender.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpbxGender.Location = new System.Drawing.Point(73, 363);
-            this.grpbxGender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpbxGender.Location = new System.Drawing.Point(97, 447);
+            this.grpbxGender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpbxGender.Name = "grpbxGender";
-            this.grpbxGender.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.grpbxGender.Size = new System.Drawing.Size(235, 65);
+            this.grpbxGender.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpbxGender.Size = new System.Drawing.Size(313, 80);
             this.grpbxGender.TabIndex = 11;
             this.grpbxGender.TabStop = false;
             this.grpbxGender.Enter += new System.EventHandler(this.grpbxGender_Enter);
@@ -228,10 +241,10 @@
             // 
             this.rdbtnFemale.AutoSize = true;
             this.rdbtnFemale.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbtnFemale.Location = new System.Drawing.Point(120, 23);
-            this.rdbtnFemale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbtnFemale.Location = new System.Drawing.Point(160, 28);
+            this.rdbtnFemale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbtnFemale.Name = "rdbtnFemale";
-            this.rdbtnFemale.Size = new System.Drawing.Size(78, 23);
+            this.rdbtnFemale.Size = new System.Drawing.Size(93, 25);
             this.rdbtnFemale.TabIndex = 12;
             this.rdbtnFemale.TabStop = true;
             this.rdbtnFemale.Text = "Female";
@@ -241,10 +254,10 @@
             // 
             this.rdbtnMale.AutoSize = true;
             this.rdbtnMale.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbtnMale.Location = new System.Drawing.Point(34, 23);
-            this.rdbtnMale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbtnMale.Location = new System.Drawing.Point(45, 28);
+            this.rdbtnMale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbtnMale.Name = "rdbtnMale";
-            this.rdbtnMale.Size = new System.Drawing.Size(61, 23);
+            this.rdbtnMale.Size = new System.Drawing.Size(72, 25);
             this.rdbtnMale.TabIndex = 0;
             this.rdbtnMale.TabStop = true;
             this.rdbtnMale.Text = "Male";
@@ -256,21 +269,20 @@
             this.lblAge.AutoSize = true;
             this.lblAge.BackColor = System.Drawing.Color.Transparent;
             this.lblAge.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAge.Location = new System.Drawing.Point(422, 233);
-            this.lblAge.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAge.Location = new System.Drawing.Point(563, 290);
             this.lblAge.Name = "lblAge";
-            this.lblAge.Size = new System.Drawing.Size(44, 19);
+            this.lblAge.Size = new System.Drawing.Size(54, 24);
             this.lblAge.TabIndex = 12;
             this.lblAge.Text = "Age:";
             // 
             // txtbxAge
             // 
-            this.txtbxAge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbxAge.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtbxAge.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbxAge.Location = new System.Drawing.Point(425, 255);
-            this.txtbxAge.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbxAge.Location = new System.Drawing.Point(610, 314);
+            this.txtbxAge.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtbxAge.Name = "txtbxAge";
-            this.txtbxAge.Size = new System.Drawing.Size(258, 26);
+            this.txtbxAge.Size = new System.Drawing.Size(300, 24);
             this.txtbxAge.TabIndex = 13;
             // 
             // lblContact
@@ -278,21 +290,20 @@
             this.lblContact.AutoSize = true;
             this.lblContact.BackColor = System.Drawing.Color.Transparent;
             this.lblContact.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContact.Location = new System.Drawing.Point(422, 288);
-            this.lblContact.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblContact.Location = new System.Drawing.Point(563, 357);
             this.lblContact.Name = "lblContact";
-            this.lblContact.Size = new System.Drawing.Size(100, 18);
+            this.lblContact.Size = new System.Drawing.Size(118, 21);
             this.lblContact.TabIndex = 14;
             this.lblContact.Text = "Contact No:";
             // 
             // txtbxContact
             // 
-            this.txtbxContact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbxContact.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtbxContact.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbxContact.Location = new System.Drawing.Point(425, 309);
-            this.txtbxContact.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbxContact.Location = new System.Drawing.Point(615, 380);
+            this.txtbxContact.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtbxContact.Name = "txtbxContact";
-            this.txtbxContact.Size = new System.Drawing.Size(258, 26);
+            this.txtbxContact.Size = new System.Drawing.Size(295, 24);
             this.txtbxContact.TabIndex = 15;
             // 
             // lblEmail
@@ -300,21 +311,20 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.BackColor = System.Drawing.Color.Transparent;
             this.lblEmail.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(422, 342);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail.Location = new System.Drawing.Point(563, 421);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(62, 19);
+            this.lblEmail.Size = new System.Drawing.Size(78, 24);
             this.lblEmail.TabIndex = 16;
             this.lblEmail.Text = "Email:";
             // 
             // txtbxEmail
             // 
-            this.txtbxEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbxEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtbxEmail.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbxEmail.Location = new System.Drawing.Point(425, 363);
-            this.txtbxEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbxEmail.Location = new System.Drawing.Point(615, 447);
+            this.txtbxEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtbxEmail.Name = "txtbxEmail";
-            this.txtbxEmail.Size = new System.Drawing.Size(258, 26);
+            this.txtbxEmail.Size = new System.Drawing.Size(295, 24);
             this.txtbxEmail.TabIndex = 17;
             // 
             // lblBodyTemp
@@ -322,31 +332,30 @@
             this.lblBodyTemp.AutoSize = true;
             this.lblBodyTemp.BackColor = System.Drawing.Color.Transparent;
             this.lblBodyTemp.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBodyTemp.Location = new System.Drawing.Point(423, 185);
-            this.lblBodyTemp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBodyTemp.Location = new System.Drawing.Point(564, 228);
             this.lblBodyTemp.Name = "lblBodyTemp";
-            this.lblBodyTemp.Size = new System.Drawing.Size(100, 18);
+            this.lblBodyTemp.Size = new System.Drawing.Size(121, 21);
             this.lblBodyTemp.TabIndex = 18;
             this.lblBodyTemp.Text = "Body Temp:";
             // 
             // txtbxBodyTemp
             // 
-            this.txtbxBodyTemp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbxBodyTemp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtbxBodyTemp.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbxBodyTemp.Location = new System.Drawing.Point(425, 205);
-            this.txtbxBodyTemp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbxBodyTemp.Location = new System.Drawing.Point(615, 252);
+            this.txtbxBodyTemp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtbxBodyTemp.Name = "txtbxBodyTemp";
-            this.txtbxBodyTemp.Size = new System.Drawing.Size(256, 26);
+            this.txtbxBodyTemp.Size = new System.Drawing.Size(300, 24);
             this.txtbxBodyTemp.TabIndex = 19;
             // 
             // txtbxDate
             // 
-            this.txtbxDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbxDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtbxDate.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbxDate.Location = new System.Drawing.Point(617, 157);
-            this.txtbxDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbxDate.Location = new System.Drawing.Point(886, 160);
+            this.txtbxDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtbxDate.Name = "txtbxDate";
-            this.txtbxDate.Size = new System.Drawing.Size(154, 26);
+            this.txtbxDate.Size = new System.Drawing.Size(197, 24);
             this.txtbxDate.TabIndex = 20;
             // 
             // grpbxQ1
@@ -357,11 +366,11 @@
             this.grpbxQ1.Controls.Add(this.rdbtnQ1Yes);
             this.grpbxQ1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.grpbxQ1.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpbxQ1.Location = new System.Drawing.Point(25, 477);
-            this.grpbxQ1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpbxQ1.Location = new System.Drawing.Point(33, 587);
+            this.grpbxQ1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpbxQ1.Name = "grpbxQ1";
-            this.grpbxQ1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.grpbxQ1.Size = new System.Drawing.Size(345, 106);
+            this.grpbxQ1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpbxQ1.Size = new System.Drawing.Size(460, 130);
             this.grpbxQ1.TabIndex = 13;
             this.grpbxQ1.TabStop = false;
             this.grpbxQ1.Text = "Have you been in a close contact with those who have COVID-19 in the past 2 weeks" +
@@ -372,10 +381,10 @@
             // 
             this.rdbtnQ1No.AutoSize = true;
             this.rdbtnQ1No.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbtnQ1No.Location = new System.Drawing.Point(69, 75);
-            this.rdbtnQ1No.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbtnQ1No.Location = new System.Drawing.Point(92, 92);
+            this.rdbtnQ1No.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbtnQ1No.Name = "rdbtnQ1No";
-            this.rdbtnQ1No.Size = new System.Drawing.Size(45, 23);
+            this.rdbtnQ1No.Size = new System.Drawing.Size(54, 25);
             this.rdbtnQ1No.TabIndex = 12;
             this.rdbtnQ1No.TabStop = true;
             this.rdbtnQ1No.Text = "No";
@@ -385,10 +394,10 @@
             // 
             this.rdbtnQ1Yes.AutoSize = true;
             this.rdbtnQ1Yes.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbtnQ1Yes.Location = new System.Drawing.Point(69, 50);
-            this.rdbtnQ1Yes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbtnQ1Yes.Location = new System.Drawing.Point(92, 62);
+            this.rdbtnQ1Yes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbtnQ1Yes.Name = "rdbtnQ1Yes";
-            this.rdbtnQ1Yes.Size = new System.Drawing.Size(51, 23);
+            this.rdbtnQ1Yes.Size = new System.Drawing.Size(61, 25);
             this.rdbtnQ1Yes.TabIndex = 0;
             this.rdbtnQ1Yes.TabStop = true;
             this.rdbtnQ1Yes.Text = "Yes";
@@ -412,11 +421,11 @@
             this.grpbxQ2.Controls.Add(this.label1);
             this.grpbxQ2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.grpbxQ2.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpbxQ2.Location = new System.Drawing.Point(409, 468);
-            this.grpbxQ2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpbxQ2.Location = new System.Drawing.Point(545, 576);
+            this.grpbxQ2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpbxQ2.Name = "grpbxQ2";
-            this.grpbxQ2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.grpbxQ2.Size = new System.Drawing.Size(335, 195);
+            this.grpbxQ2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpbxQ2.Size = new System.Drawing.Size(447, 240);
             this.grpbxQ2.TabIndex = 14;
             this.grpbxQ2.TabStop = false;
             this.grpbxQ2.Text = "Do you have any of these symptoms?";
@@ -425,10 +434,10 @@
             // 
             this.chckbxSymptoms10.AutoSize = true;
             this.chckbxSymptoms10.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chckbxSymptoms10.Location = new System.Drawing.Point(208, 149);
-            this.chckbxSymptoms10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chckbxSymptoms10.Location = new System.Drawing.Point(277, 183);
+            this.chckbxSymptoms10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chckbxSymptoms10.Name = "chckbxSymptoms10";
-            this.chckbxSymptoms10.Size = new System.Drawing.Size(64, 23);
+            this.chckbxSymptoms10.Size = new System.Drawing.Size(76, 25);
             this.chckbxSymptoms10.TabIndex = 31;
             this.chckbxSymptoms10.Text = "None";
             this.chckbxSymptoms10.UseVisualStyleBackColor = true;
@@ -437,10 +446,10 @@
             // 
             this.chckbxSymptoms8.AutoSize = true;
             this.chckbxSymptoms8.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chckbxSymptoms8.Location = new System.Drawing.Point(26, 150);
-            this.chckbxSymptoms8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chckbxSymptoms8.Location = new System.Drawing.Point(35, 185);
+            this.chckbxSymptoms8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chckbxSymptoms8.Name = "chckbxSymptoms8";
-            this.chckbxSymptoms8.Size = new System.Drawing.Size(89, 23);
+            this.chckbxSymptoms8.Size = new System.Drawing.Size(106, 25);
             this.chckbxSymptoms8.TabIndex = 30;
             this.chckbxSymptoms8.Text = "Diarrhea";
             this.chckbxSymptoms8.UseVisualStyleBackColor = true;
@@ -449,10 +458,10 @@
             // 
             this.chckbxSymptoms9.AutoSize = true;
             this.chckbxSymptoms9.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chckbxSymptoms9.Location = new System.Drawing.Point(208, 124);
-            this.chckbxSymptoms9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chckbxSymptoms9.Location = new System.Drawing.Point(277, 153);
+            this.chckbxSymptoms9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chckbxSymptoms9.Name = "chckbxSymptoms9";
-            this.chckbxSymptoms9.Size = new System.Drawing.Size(97, 23);
+            this.chckbxSymptoms9.Size = new System.Drawing.Size(117, 25);
             this.chckbxSymptoms9.TabIndex = 29;
             this.chckbxSymptoms9.Text = "Headache";
             this.chckbxSymptoms9.UseVisualStyleBackColor = true;
@@ -462,10 +471,10 @@
             // 
             this.chckbxSymptoms7.AutoSize = true;
             this.chckbxSymptoms7.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chckbxSymptoms7.Location = new System.Drawing.Point(26, 125);
-            this.chckbxSymptoms7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chckbxSymptoms7.Location = new System.Drawing.Point(35, 154);
+            this.chckbxSymptoms7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chckbxSymptoms7.Name = "chckbxSymptoms7";
-            this.chckbxSymptoms7.Size = new System.Drawing.Size(113, 23);
+            this.chckbxSymptoms7.Size = new System.Drawing.Size(132, 25);
             this.chckbxSymptoms7.TabIndex = 28;
             this.chckbxSymptoms7.Text = "Runny nose";
             this.chckbxSymptoms7.UseVisualStyleBackColor = true;
@@ -474,10 +483,10 @@
             // 
             this.chckbxSymptoms6.AutoSize = true;
             this.chckbxSymptoms6.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chckbxSymptoms6.Location = new System.Drawing.Point(208, 98);
-            this.chckbxSymptoms6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chckbxSymptoms6.Location = new System.Drawing.Point(277, 121);
+            this.chckbxSymptoms6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chckbxSymptoms6.Name = "chckbxSymptoms6";
-            this.chckbxSymptoms6.Size = new System.Drawing.Size(104, 23);
+            this.chckbxSymptoms6.Size = new System.Drawing.Size(125, 25);
             this.chckbxSymptoms6.TabIndex = 27;
             this.chckbxSymptoms6.Text = "Sore throat";
             this.chckbxSymptoms6.UseVisualStyleBackColor = true;
@@ -486,10 +495,10 @@
             // 
             this.chckbxSymptoms2.AutoSize = true;
             this.chckbxSymptoms2.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chckbxSymptoms2.Location = new System.Drawing.Point(26, 76);
-            this.chckbxSymptoms2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chckbxSymptoms2.Location = new System.Drawing.Point(35, 94);
+            this.chckbxSymptoms2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chckbxSymptoms2.Name = "chckbxSymptoms2";
-            this.chckbxSymptoms2.Size = new System.Drawing.Size(176, 23);
+            this.chckbxSymptoms2.Size = new System.Drawing.Size(206, 25);
             this.chckbxSymptoms2.TabIndex = 26;
             this.chckbxSymptoms2.Text = "Breathing difficulties";
             this.chckbxSymptoms2.UseVisualStyleBackColor = true;
@@ -499,10 +508,10 @@
             // 
             this.chckbxSymptoms4.AutoSize = true;
             this.chckbxSymptoms4.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chckbxSymptoms4.Location = new System.Drawing.Point(208, 51);
-            this.chckbxSymptoms4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chckbxSymptoms4.Location = new System.Drawing.Point(277, 63);
+            this.chckbxSymptoms4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chckbxSymptoms4.Name = "chckbxSymptoms4";
-            this.chckbxSymptoms4.Size = new System.Drawing.Size(107, 23);
+            this.chckbxSymptoms4.Size = new System.Drawing.Size(129, 25);
             this.chckbxSymptoms4.TabIndex = 25;
             this.chckbxSymptoms4.Text = "Body aches";
             this.chckbxSymptoms4.UseVisualStyleBackColor = true;
@@ -511,10 +520,10 @@
             // 
             this.chckbxSymptoms3.AutoSize = true;
             this.chckbxSymptoms3.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chckbxSymptoms3.Location = new System.Drawing.Point(26, 100);
-            this.chckbxSymptoms3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chckbxSymptoms3.Location = new System.Drawing.Point(35, 123);
+            this.chckbxSymptoms3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chckbxSymptoms3.Name = "chckbxSymptoms3";
-            this.chckbxSymptoms3.Size = new System.Drawing.Size(171, 23);
+            this.chckbxSymptoms3.Size = new System.Drawing.Size(208, 25);
             this.chckbxSymptoms3.TabIndex = 24;
             this.chckbxSymptoms3.Text = "Loss of taste or smell";
             this.chckbxSymptoms3.UseVisualStyleBackColor = true;
@@ -523,10 +532,10 @@
             // 
             this.chckbxSymptoms5.AutoSize = true;
             this.chckbxSymptoms5.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chckbxSymptoms5.Location = new System.Drawing.Point(208, 76);
-            this.chckbxSymptoms5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chckbxSymptoms5.Location = new System.Drawing.Point(277, 94);
+            this.chckbxSymptoms5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chckbxSymptoms5.Name = "chckbxSymptoms5";
-            this.chckbxSymptoms5.Size = new System.Drawing.Size(100, 23);
+            this.chckbxSymptoms5.Size = new System.Drawing.Size(118, 25);
             this.chckbxSymptoms5.TabIndex = 23;
             this.chckbxSymptoms5.Text = "Dry cough";
             this.chckbxSymptoms5.UseVisualStyleBackColor = true;
@@ -535,10 +544,10 @@
             // 
             this.chckbxSymptoms1.AutoSize = true;
             this.chckbxSymptoms1.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chckbxSymptoms1.Location = new System.Drawing.Point(26, 52);
-            this.chckbxSymptoms1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chckbxSymptoms1.Location = new System.Drawing.Point(35, 64);
+            this.chckbxSymptoms1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chckbxSymptoms1.Name = "chckbxSymptoms1";
-            this.chckbxSymptoms1.Size = new System.Drawing.Size(66, 23);
+            this.chckbxSymptoms1.Size = new System.Drawing.Size(79, 25);
             this.chckbxSymptoms1.TabIndex = 22;
             this.chckbxSymptoms1.Text = "Fever";
             this.chckbxSymptoms1.UseVisualStyleBackColor = true;
@@ -548,10 +557,9 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Bookman Old Style", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 22);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(17, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 16);
+            this.label1.Size = new System.Drawing.Size(141, 17);
             this.label1.TabIndex = 21;
             this.label1.Text = "(Check all that apply)";
             // 
@@ -560,10 +568,9 @@
             this.lblDateFormat.AutoSize = true;
             this.lblDateFormat.BackColor = System.Drawing.Color.Transparent;
             this.lblDateFormat.Font = new System.Drawing.Font("Bookman Old Style", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateFormat.Location = new System.Drawing.Point(655, 139);
-            this.lblDateFormat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDateFormat.Location = new System.Drawing.Point(914, 193);
             this.lblDateFormat.Name = "lblDateFormat";
-            this.lblDateFormat.Size = new System.Drawing.Size(95, 16);
+            this.lblDateFormat.Size = new System.Drawing.Size(114, 17);
             this.lblDateFormat.TabIndex = 21;
             this.lblDateFormat.Text = "(mm / dd / yyyy)";
             // 
@@ -572,10 +579,9 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Bookman Old Style", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(86, 205);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(115, 254);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 16);
+            this.label2.Size = new System.Drawing.Size(146, 17);
             this.label2.TabIndex = 22;
             this.label2.Text = "(First Name, Surname)";
             // 
@@ -588,11 +594,11 @@
             this.grpbxQ4.Controls.Add(this.rdbtnVaccinationYes);
             this.grpbxQ4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.grpbxQ4.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpbxQ4.Location = new System.Drawing.Point(29, 587);
-            this.grpbxQ4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpbxQ4.Location = new System.Drawing.Point(39, 722);
+            this.grpbxQ4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpbxQ4.Name = "grpbxQ4";
-            this.grpbxQ4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.grpbxQ4.Size = new System.Drawing.Size(345, 114);
+            this.grpbxQ4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpbxQ4.Size = new System.Drawing.Size(460, 140);
             this.grpbxQ4.TabIndex = 14;
             this.grpbxQ4.TabStop = false;
             this.grpbxQ4.Text = "Have you been vaccinated?";
@@ -601,10 +607,10 @@
             // 
             this.rdbtnVaccinationNo.AutoSize = true;
             this.rdbtnVaccinationNo.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbtnVaccinationNo.Location = new System.Drawing.Point(44, 81);
-            this.rdbtnVaccinationNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbtnVaccinationNo.Location = new System.Drawing.Point(59, 100);
+            this.rdbtnVaccinationNo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbtnVaccinationNo.Name = "rdbtnVaccinationNo";
-            this.rdbtnVaccinationNo.Size = new System.Drawing.Size(197, 23);
+            this.rdbtnVaccinationNo.Size = new System.Drawing.Size(237, 25);
             this.rdbtnVaccinationNo.TabIndex = 13;
             this.rdbtnVaccinationNo.TabStop = true;
             this.rdbtnVaccinationNo.Text = "Haven\'t been vaccinated";
@@ -614,10 +620,10 @@
             // 
             this.rdbtnVaccinationFirstdose.AutoSize = true;
             this.rdbtnVaccinationFirstdose.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbtnVaccinationFirstdose.Location = new System.Drawing.Point(44, 58);
-            this.rdbtnVaccinationFirstdose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbtnVaccinationFirstdose.Location = new System.Drawing.Point(59, 71);
+            this.rdbtnVaccinationFirstdose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbtnVaccinationFirstdose.Name = "rdbtnVaccinationFirstdose";
-            this.rdbtnVaccinationFirstdose.Size = new System.Drawing.Size(130, 23);
+            this.rdbtnVaccinationFirstdose.Size = new System.Drawing.Size(154, 25);
             this.rdbtnVaccinationFirstdose.TabIndex = 12;
             this.rdbtnVaccinationFirstdose.TabStop = true;
             this.rdbtnVaccinationFirstdose.Text = "First dose only";
@@ -628,10 +634,10 @@
             // 
             this.rdbtnVaccinationYes.AutoSize = true;
             this.rdbtnVaccinationYes.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbtnVaccinationYes.Location = new System.Drawing.Point(44, 32);
-            this.rdbtnVaccinationYes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbtnVaccinationYes.Location = new System.Drawing.Point(59, 39);
+            this.rdbtnVaccinationYes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbtnVaccinationYes.Name = "rdbtnVaccinationYes";
-            this.rdbtnVaccinationYes.Size = new System.Drawing.Size(171, 23);
+            this.rdbtnVaccinationYes.Size = new System.Drawing.Size(202, 25);
             this.rdbtnVaccinationYes.TabIndex = 0;
             this.rdbtnVaccinationYes.TabStop = true;
             this.rdbtnVaccinationYes.Text = "Yes, fully vaccinated";
@@ -643,23 +649,24 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 356);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(40, 438);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 19);
+            this.label3.Size = new System.Drawing.Size(55, 24);
             this.label3.TabIndex = 23;
             this.label3.Text = "Sex:";
             // 
             // btnSave
             // 
+            this.btnSave.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSave.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(685, 674);
+            this.btnSave.Location = new System.Drawing.Point(913, 830);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(86, 36);
+            this.btnSave.Size = new System.Drawing.Size(115, 44);
             this.btnSave.TabIndex = 25;
             this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label4
@@ -667,10 +674,9 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Bookman Old Style", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(13, 173);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(17, 213);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(190, 19);
+            this.label4.Size = new System.Drawing.Size(238, 24);
             this.label4.TabIndex = 26;
             this.label4.Text = "Personal Information";
             // 
@@ -679,31 +685,189 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Bookman Old Style", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(13, 447);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(17, 550);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(173, 19);
+            this.label5.Size = new System.Drawing.Size(217, 24);
             this.label5.TabIndex = 27;
             this.label5.Text = "Health Information";
             // 
             // btnExit
             // 
+            this.btnExit.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnExit.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(777, 674);
+            this.btnExit.Location = new System.Drawing.Point(1036, 830);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(81, 36);
+            this.btnExit.Size = new System.Drawing.Size(108, 44);
             this.btnExit.TabIndex = 28;
             this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // pnl1name
+            // 
+            this.pnl1name.BackColor = System.Drawing.Color.DimGray;
+            this.pnl1name.ForeColor = System.Drawing.Color.DimGray;
+            this.pnl1name.Location = new System.Drawing.Point(99, 306);
+            this.pnl1name.Name = "pnl1name";
+            this.pnl1name.Size = new System.Drawing.Size(400, 3);
+            this.pnl1name.TabIndex = 29;
+            // 
+            // pnlAddress
+            // 
+            this.pnlAddress.BackColor = System.Drawing.Color.DimGray;
+            this.pnlAddress.ForeColor = System.Drawing.Color.DimGray;
+            this.pnlAddress.Location = new System.Drawing.Point(99, 397);
+            this.pnlAddress.Name = "pnlAddress";
+            this.pnlAddress.Size = new System.Drawing.Size(400, 3);
+            this.pnlAddress.TabIndex = 30;
+            // 
+            // pnlBodyTemp
+            // 
+            this.pnlBodyTemp.BackColor = System.Drawing.Color.DimGray;
+            this.pnlBodyTemp.ForeColor = System.Drawing.Color.DimGray;
+            this.pnlBodyTemp.Location = new System.Drawing.Point(615, 283);
+            this.pnlBodyTemp.Name = "pnlBodyTemp";
+            this.pnlBodyTemp.Size = new System.Drawing.Size(300, 3);
+            this.pnlBodyTemp.TabIndex = 30;
+            // 
+            // pnlAge
+            // 
+            this.pnlAge.BackColor = System.Drawing.Color.DimGray;
+            this.pnlAge.ForeColor = System.Drawing.Color.DimGray;
+            this.pnlAge.Location = new System.Drawing.Point(614, 344);
+            this.pnlAge.Name = "pnlAge";
+            this.pnlAge.Size = new System.Drawing.Size(300, 3);
+            this.pnlAge.TabIndex = 31;
+            // 
+            // pnlContact
+            // 
+            this.pnlContact.BackColor = System.Drawing.Color.DimGray;
+            this.pnlContact.ForeColor = System.Drawing.Color.DimGray;
+            this.pnlContact.Location = new System.Drawing.Point(615, 410);
+            this.pnlContact.Name = "pnlContact";
+            this.pnlContact.Size = new System.Drawing.Size(300, 3);
+            this.pnlContact.TabIndex = 32;
+            // 
+            // pnlEmail
+            // 
+            this.pnlEmail.BackColor = System.Drawing.Color.DimGray;
+            this.pnlEmail.ForeColor = System.Drawing.Color.DimGray;
+            this.pnlEmail.Location = new System.Drawing.Point(614, 480);
+            this.pnlEmail.Name = "pnlEmail";
+            this.pnlEmail.Size = new System.Drawing.Size(300, 3);
+            this.pnlEmail.TabIndex = 33;
+            // 
+            // pnlDate
+            // 
+            this.pnlDate.BackColor = System.Drawing.Color.DimGray;
+            this.pnlDate.ForeColor = System.Drawing.Color.DimGray;
+            this.pnlDate.Location = new System.Drawing.Point(883, 188);
+            this.pnlDate.Name = "pnlDate";
+            this.pnlDate.Size = new System.Drawing.Size(200, 3);
+            this.pnlDate.TabIndex = 31;
+            // 
+            // IconName
+            // 
+            this.IconName.BackColor = System.Drawing.Color.Transparent;
+            this.IconName.Image = global::Contact_Tracing.Properties.Resources.White_Pastel_Drawings__2_;
+            this.IconName.Location = new System.Drawing.Point(47, 273);
+            this.IconName.Name = "IconName";
+            this.IconName.Size = new System.Drawing.Size(52, 44);
+            this.IconName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.IconName.TabIndex = 34;
+            this.IconName.TabStop = false;
+            // 
+            // IconAddress
+            // 
+            this.IconAddress.BackColor = System.Drawing.Color.Transparent;
+            this.IconAddress.Image = global::Contact_Tracing.Properties.Resources.White_Pastel_Drawings__3_;
+            this.IconAddress.Location = new System.Drawing.Point(47, 351);
+            this.IconAddress.Name = "IconAddress";
+            this.IconAddress.Size = new System.Drawing.Size(52, 44);
+            this.IconAddress.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.IconAddress.TabIndex = 35;
+            this.IconAddress.TabStop = false;
+            // 
+            // IconTemp
+            // 
+            this.IconTemp.BackColor = System.Drawing.Color.Transparent;
+            this.IconTemp.Image = global::Contact_Tracing.Properties.Resources.White_Pastel_Drawings__4_;
+            this.IconTemp.Location = new System.Drawing.Point(568, 249);
+            this.IconTemp.Name = "IconTemp";
+            this.IconTemp.Size = new System.Drawing.Size(46, 38);
+            this.IconTemp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.IconTemp.TabIndex = 36;
+            this.IconTemp.TabStop = false;
+            // 
+            // IconAge
+            // 
+            this.IconAge.BackColor = System.Drawing.Color.Transparent;
+            this.IconAge.Image = global::Contact_Tracing.Properties.Resources.White_Pastel_Drawings__5_;
+            this.IconAge.Location = new System.Drawing.Point(568, 314);
+            this.IconAge.Name = "IconAge";
+            this.IconAge.Size = new System.Drawing.Size(42, 40);
+            this.IconAge.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.IconAge.TabIndex = 37;
+            this.IconAge.TabStop = false;
+            // 
+            // IconContact
+            // 
+            this.IconContact.BackColor = System.Drawing.Color.Transparent;
+            this.IconContact.Image = global::Contact_Tracing.Properties.Resources.White_Pastel_Drawings__7_;
+            this.IconContact.Location = new System.Drawing.Point(567, 377);
+            this.IconContact.Name = "IconContact";
+            this.IconContact.Size = new System.Drawing.Size(46, 41);
+            this.IconContact.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.IconContact.TabIndex = 38;
+            this.IconContact.TabStop = false;
+            // 
+            // IconEmail
+            // 
+            this.IconEmail.BackColor = System.Drawing.Color.Transparent;
+            this.IconEmail.Image = global::Contact_Tracing.Properties.Resources.White_Pastel_Drawings__8_;
+            this.IconEmail.Location = new System.Drawing.Point(568, 448);
+            this.IconEmail.Name = "IconEmail";
+            this.IconEmail.Size = new System.Drawing.Size(46, 36);
+            this.IconEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.IconEmail.TabIndex = 39;
+            this.IconEmail.TabStop = false;
+            // 
+            // lnklblForm2
+            // 
+            this.lnklblForm2.AutoSize = true;
+            this.lnklblForm2.BackColor = System.Drawing.Color.Transparent;
+            this.lnklblForm2.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnklblForm2.Location = new System.Drawing.Point(911, 881);
+            this.lnklblForm2.Name = "lnklblForm2";
+            this.lnklblForm2.Size = new System.Drawing.Size(177, 21);
+            this.lnklblForm2.TabIndex = 40;
+            this.lnklblForm2.TabStop = true;
+            this.lnklblForm2.Text = "See all responses ...";
+            this.lnklblForm2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblForm2_LinkClicked);
             // 
             // txtbxName
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(886, 687);
+            this.ClientSize = new System.Drawing.Size(1181, 924);
+            this.Controls.Add(this.lnklblForm2);
+            this.Controls.Add(this.IconEmail);
+            this.Controls.Add(this.IconContact);
+            this.Controls.Add(this.IconAge);
+            this.Controls.Add(this.IconTemp);
+            this.Controls.Add(this.IconAddress);
+            this.Controls.Add(this.IconName);
+            this.Controls.Add(this.pnlDate);
+            this.Controls.Add(this.pnlEmail);
+            this.Controls.Add(this.pnlContact);
+            this.Controls.Add(this.pnlAge);
+            this.Controls.Add(this.pnlBodyTemp);
+            this.Controls.Add(this.pnlAddress);
+            this.Controls.Add(this.pnl1name);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -735,8 +899,9 @@
             this.Controls.Add(this.lblPrivacyNotice);
             this.Controls.Add(this.pctrbxLogo);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "txtbxName";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -751,6 +916,12 @@
             this.grpbxQ2.PerformLayout();
             this.grpbxQ4.ResumeLayout(false);
             this.grpbxQ4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IconName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconAddress)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconTemp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconAge)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconContact)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconEmail)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -806,6 +977,20 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Panel pnl1name;
+        private System.Windows.Forms.Panel pnlAddress;
+        private System.Windows.Forms.Panel pnlBodyTemp;
+        private System.Windows.Forms.Panel pnlAge;
+        private System.Windows.Forms.Panel pnlContact;
+        private System.Windows.Forms.Panel pnlEmail;
+        private System.Windows.Forms.Panel pnlDate;
+        private System.Windows.Forms.PictureBox IconName;
+        private System.Windows.Forms.PictureBox IconAddress;
+        private System.Windows.Forms.PictureBox IconTemp;
+        private System.Windows.Forms.PictureBox IconAge;
+        private System.Windows.Forms.PictureBox IconContact;
+        private System.Windows.Forms.PictureBox IconEmail;
+        private System.Windows.Forms.LinkLabel lnklblForm2;
     }
 }
 
