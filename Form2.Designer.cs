@@ -33,33 +33,34 @@
             this.Response_List = new System.Windows.Forms.ListBox();
             this.lblHealth_Response = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblSearch = new System.Windows.Forms.Label();
+            this.txtbxSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.pctrbxLogo = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.grpbxSort = new System.Windows.Forms.GroupBox();
-            this.lblSort = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnDateSearch = new System.Windows.Forms.Button();
+            this.lblDateFormat = new System.Windows.Forms.Label();
             this.btnVaccination = new System.Windows.Forms.Button();
             this.cntxtmnVaccination = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tlstrpFull = new System.Windows.Forms.ToolStripMenuItem();
             this.tlstrpFirst = new System.Windows.Forms.ToolStripMenuItem();
             this.tlstrpNot = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnDateSearch = new System.Windows.Forms.Button();
             this.cntxtDateSearch = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tlstrpDateSearch = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.btnSeeAll = new System.Windows.Forms.Button();
+            this.lblSort = new System.Windows.Forms.Label();
+            this.pnlSortDesign = new System.Windows.Forms.Panel();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.pnlListDesign = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxLogo)).BeginInit();
             this.grpbxSort.SuspendLayout();
             this.cntxtmnVaccination.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.cntxtDateSearch.SuspendLayout();
+            this.pnlSortDesign.SuspendLayout();
+            this.pnlListDesign.SuspendLayout();
             this.SuspendLayout();
             // 
             // Response_List
@@ -99,30 +100,31 @@
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // lblSearch
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(194, 146);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 23);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Search ...";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSearch.Location = new System.Drawing.Point(194, 146);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(102, 23);
+            this.lblSearch.TabIndex = 5;
+            this.lblSearch.Text = "Search ...";
+            this.lblSearch.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // txtbxSearch
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(304, 144);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(450, 28);
-            this.textBox1.TabIndex = 9;
+            this.txtbxSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxSearch.Location = new System.Drawing.Point(304, 144);
+            this.txtbxSearch.Name = "txtbxSearch";
+            this.txtbxSearch.Size = new System.Drawing.Size(450, 28);
+            this.txtbxSearch.TabIndex = 9;
             // 
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.Color.Transparent;
             this.btnSearch.BackgroundImage = global::Contact_Tracing.Properties.Resources.White_Pastel_Drawings__9_;
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -163,9 +165,10 @@
             // grpbxSort
             // 
             this.grpbxSort.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.grpbxSort.Controls.Add(this.lblDateFormat);
             this.grpbxSort.Controls.Add(this.btnVaccination);
             this.grpbxSort.Controls.Add(this.btnDateSearch);
-            this.grpbxSort.Controls.Add(this.button1);
+            this.grpbxSort.Controls.Add(this.btnSeeAll);
             this.grpbxSort.Location = new System.Drawing.Point(22, 185);
             this.grpbxSort.Name = "grpbxSort";
             this.grpbxSort.Size = new System.Drawing.Size(162, 335);
@@ -173,52 +176,18 @@
             this.grpbxSort.TabStop = false;
             this.grpbxSort.Text = " ";
             // 
-            // lblSort
+            // lblDateFormat
             // 
-            this.lblSort.AutoSize = true;
-            this.lblSort.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSort.Location = new System.Drawing.Point(19, 4);
-            this.lblSort.Name = "lblSort";
-            this.lblSort.Size = new System.Drawing.Size(126, 24);
-            this.lblSort.TabIndex = 13;
-            this.lblSort.Text = "Sort by . . .";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PaleVioletRed;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MistyRose;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(2, 114);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 28);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "See all";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // btnDateSearch
-            // 
-            this.btnDateSearch.AllowDrop = true;
-            this.btnDateSearch.BackColor = System.Drawing.Color.White;
-            this.btnDateSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnDateSearch.ContextMenuStrip = this.cntxtDateSearch;
-            this.btnDateSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDateSearch.FlatAppearance.BorderSize = 0;
-            this.btnDateSearch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnDateSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MistyRose;
-            this.btnDateSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDateSearch.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDateSearch.Location = new System.Drawing.Point(4, 46);
-            this.btnDateSearch.Name = "btnDateSearch";
-            this.btnDateSearch.Size = new System.Drawing.Size(153, 28);
-            this.btnDateSearch.TabIndex = 15;
-            this.btnDateSearch.Text = "Date";
-            this.btnDateSearch.UseVisualStyleBackColor = false;
-            this.btnDateSearch.Click += new System.EventHandler(this.button2_Click);
+            this.lblDateFormat.AutoSize = true;
+            this.lblDateFormat.BackColor = System.Drawing.Color.MistyRose;
+            this.lblDateFormat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblDateFormat.Font = new System.Drawing.Font("Bookman Old Style", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateFormat.ForeColor = System.Drawing.Color.Gray;
+            this.lblDateFormat.Location = new System.Drawing.Point(64, 53);
+            this.lblDateFormat.Name = "lblDateFormat";
+            this.lblDateFormat.Size = new System.Drawing.Size(81, 16);
+            this.lblDateFormat.TabIndex = 18;
+            this.lblDateFormat.Text = "mm/dd/yyyy";
             // 
             // btnVaccination
             // 
@@ -237,6 +206,7 @@
             this.btnVaccination.Size = new System.Drawing.Size(153, 28);
             this.btnVaccination.TabIndex = 16;
             this.btnVaccination.Text = "Vaccination";
+            this.btnVaccination.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVaccination.UseVisualStyleBackColor = false;
             this.btnVaccination.Click += new System.EventHandler(this.btnVaccination_Click);
             // 
@@ -273,14 +243,88 @@
             this.tlstrpNot.Size = new System.Drawing.Size(205, 24);
             this.tlstrpNot.Text = "Not vaccinated";
             // 
-            // panel1
+            // btnDateSearch
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel1.Controls.Add(this.lblSort);
-            this.panel1.Location = new System.Drawing.Point(22, 185);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(162, 31);
-            this.panel1.TabIndex = 15;
+            this.btnDateSearch.AllowDrop = true;
+            this.btnDateSearch.BackColor = System.Drawing.Color.White;
+            this.btnDateSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDateSearch.ContextMenuStrip = this.cntxtDateSearch;
+            this.btnDateSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDateSearch.FlatAppearance.BorderSize = 0;
+            this.btnDateSearch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PaleVioletRed;
+            this.btnDateSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MistyRose;
+            this.btnDateSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDateSearch.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDateSearch.Location = new System.Drawing.Point(4, 46);
+            this.btnDateSearch.Name = "btnDateSearch";
+            this.btnDateSearch.Size = new System.Drawing.Size(153, 28);
+            this.btnDateSearch.TabIndex = 15;
+            this.btnDateSearch.Text = "Date";
+            this.btnDateSearch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDateSearch.UseVisualStyleBackColor = false;
+            this.btnDateSearch.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // cntxtDateSearch
+            // 
+            this.cntxtDateSearch.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.cntxtDateSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tlstrpDateSearch});
+            this.cntxtDateSearch.Name = "cntxtmnVaccination";
+            this.cntxtDateSearch.Size = new System.Drawing.Size(162, 28);
+            // 
+            // tlstrpDateSearch
+            // 
+            this.tlstrpDateSearch.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tlstrpDateSearch.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBox1});
+            this.tlstrpDateSearch.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tlstrpDateSearch.Name = "tlstrpDateSearch";
+            this.tlstrpDateSearch.Size = new System.Drawing.Size(161, 24);
+            this.tlstrpDateSearch.Text = "Enter Date";
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 27);
+            // 
+            // btnSeeAll
+            // 
+            this.btnSeeAll.BackColor = System.Drawing.Color.White;
+            this.btnSeeAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSeeAll.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSeeAll.FlatAppearance.BorderSize = 0;
+            this.btnSeeAll.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PaleVioletRed;
+            this.btnSeeAll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MistyRose;
+            this.btnSeeAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSeeAll.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSeeAll.Location = new System.Drawing.Point(2, 114);
+            this.btnSeeAll.Name = "btnSeeAll";
+            this.btnSeeAll.Size = new System.Drawing.Size(154, 28);
+            this.btnSeeAll.TabIndex = 14;
+            this.btnSeeAll.Text = "See all";
+            this.btnSeeAll.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSeeAll.UseVisualStyleBackColor = false;
+            this.btnSeeAll.Click += new System.EventHandler(this.btnSeeAll_Click);
+            // 
+            // lblSort
+            // 
+            this.lblSort.AutoSize = true;
+            this.lblSort.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSort.Location = new System.Drawing.Point(19, 4);
+            this.lblSort.Name = "lblSort";
+            this.lblSort.Size = new System.Drawing.Size(126, 24);
+            this.lblSort.TabIndex = 13;
+            this.lblSort.Text = "Sort by . . .";
+            // 
+            // pnlSortDesign
+            // 
+            this.pnlSortDesign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.pnlSortDesign.Controls.Add(this.lblSort);
+            this.pnlSortDesign.Location = new System.Drawing.Point(22, 185);
+            this.pnlSortDesign.Name = "pnlSortDesign";
+            this.pnlSortDesign.Size = new System.Drawing.Size(162, 31);
+            this.pnlSortDesign.TabIndex = 15;
             // 
             // btnClear
             // 
@@ -314,39 +358,15 @@
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
-            // panel2
+            // pnlListDesign
             // 
-            this.panel2.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panel2.Controls.Add(this.btnClear);
-            this.panel2.Controls.Add(this.btnSave);
-            this.panel2.Location = new System.Drawing.Point(197, 483);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(616, 31);
-            this.panel2.TabIndex = 16;
-            // 
-            // cntxtDateSearch
-            // 
-            this.cntxtDateSearch.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.cntxtDateSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tlstrpDateSearch});
-            this.cntxtDateSearch.Name = "cntxtmnVaccination";
-            this.cntxtDateSearch.Size = new System.Drawing.Size(162, 28);
-            // 
-            // tlstrpDateSearch
-            // 
-            this.tlstrpDateSearch.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.tlstrpDateSearch.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripTextBox1});
-            this.tlstrpDateSearch.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tlstrpDateSearch.Name = "tlstrpDateSearch";
-            this.tlstrpDateSearch.Size = new System.Drawing.Size(161, 24);
-            this.tlstrpDateSearch.Text = "Enter Date";
-            // 
-            // toolStripTextBox1
-            // 
-            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 27);
+            this.pnlListDesign.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.pnlListDesign.Controls.Add(this.btnClear);
+            this.pnlListDesign.Controls.Add(this.btnSave);
+            this.pnlListDesign.Location = new System.Drawing.Point(197, 483);
+            this.pnlListDesign.Name = "pnlListDesign";
+            this.pnlListDesign.Size = new System.Drawing.Size(616, 31);
+            this.pnlListDesign.TabIndex = 16;
             // 
             // Form2
             // 
@@ -355,13 +375,13 @@
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(844, 624);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlListDesign);
+            this.Controls.Add(this.pnlSortDesign);
             this.Controls.Add(this.grpbxSort);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtbxSearch);
+            this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblHealth_Response);
             this.Controls.Add(this.pctrbxLogo);
@@ -372,11 +392,12 @@
             this.Text = "Form Responses";
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxLogo)).EndInit();
             this.grpbxSort.ResumeLayout(false);
+            this.grpbxSort.PerformLayout();
             this.cntxtmnVaccination.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.cntxtDateSearch.ResumeLayout(false);
+            this.pnlSortDesign.ResumeLayout(false);
+            this.pnlSortDesign.PerformLayout();
+            this.pnlListDesign.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -388,25 +409,26 @@
         private System.Windows.Forms.PictureBox pctrbxLogo;
         private System.Windows.Forms.Label lblHealth_Response;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblSearch;
+        private System.Windows.Forms.TextBox txtbxSearch;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.GroupBox grpbxSort;
         private System.Windows.Forms.Button btnDateSearch;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSeeAll;
         private System.Windows.Forms.Label lblSort;
         private System.Windows.Forms.Button btnVaccination;
         private System.Windows.Forms.ContextMenuStrip cntxtmnVaccination;
         private System.Windows.Forms.ToolStripMenuItem tlstrpFull;
         private System.Windows.Forms.ToolStripMenuItem tlstrpFirst;
         private System.Windows.Forms.ToolStripMenuItem tlstrpNot;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlSortDesign;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlListDesign;
         private System.Windows.Forms.ContextMenuStrip cntxtDateSearch;
         private System.Windows.Forms.ToolStripMenuItem tlstrpDateSearch;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
+        private System.Windows.Forms.Label lblDateFormat;
     }
 }

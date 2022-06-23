@@ -71,9 +71,9 @@ namespace Contact_Tracing
 
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        public void btnSave_Click(object sender, EventArgs e)
         {
-            StreamWriter information = File.AppendText(@"C:\Users\Joyce Calangian\Documents\MJ\PUP\SUBJECTS\Health Information.txt");
+            StreamWriter information = File.AppendText(@"C:\Users\Joyce Calangian\Documents\MJ\PUP\SUBJECTS\Health_Information.txt");
             information.WriteLine("Date: " + txtbxDate.Text);
             information.WriteLine("Name: " + txtbxName1.Text);
             information.WriteLine("Address: " + txtbxAddress.Text);
@@ -202,7 +202,9 @@ namespace Contact_Tracing
 
         }
 
-        private void lnklblForm2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+       
+
+        private void btnSeeResponse_Click(object sender, EventArgs e)
         {
             new Form2().Show();
         }

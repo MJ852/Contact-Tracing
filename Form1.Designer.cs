@@ -90,7 +90,7 @@
             this.IconAge = new System.Windows.Forms.PictureBox();
             this.IconContact = new System.Windows.Forms.PictureBox();
             this.IconEmail = new System.Windows.Forms.PictureBox();
-            this.lnklblForm2 = new System.Windows.Forms.LinkLabel();
+            this.btnSeeResponse = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxLogo)).BeginInit();
             this.grpbxGender.SuspendLayout();
             this.grpbxQ1.SuspendLayout();
@@ -838,18 +838,21 @@
             this.IconEmail.TabIndex = 39;
             this.IconEmail.TabStop = false;
             // 
-            // lnklblForm2
+            // btnSeeResponse
             // 
-            this.lnklblForm2.AutoSize = true;
-            this.lnklblForm2.BackColor = System.Drawing.Color.Transparent;
-            this.lnklblForm2.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnklblForm2.Location = new System.Drawing.Point(810, 879);
-            this.lnklblForm2.Name = "lnklblForm2";
-            this.lnklblForm2.Size = new System.Drawing.Size(177, 21);
-            this.lnklblForm2.TabIndex = 40;
-            this.lnklblForm2.TabStop = true;
-            this.lnklblForm2.Text = "See all responses ...";
-            this.lnklblForm2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblForm2_LinkClicked);
+            this.btnSeeResponse.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSeeResponse.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnSeeResponse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnSeeResponse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSeeResponse.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSeeResponse.Location = new System.Drawing.Point(797, 888);
+            this.btnSeeResponse.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSeeResponse.Name = "btnSeeResponse";
+            this.btnSeeResponse.Size = new System.Drawing.Size(231, 32);
+            this.btnSeeResponse.TabIndex = 40;
+            this.btnSeeResponse.Text = "See all response ...";
+            this.btnSeeResponse.UseVisualStyleBackColor = false;
+            this.btnSeeResponse.Click += new System.EventHandler(this.btnSeeResponse_Click);
             // 
             // txtbxName
             // 
@@ -857,8 +860,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1091, 924);
-            this.Controls.Add(this.lnklblForm2);
+            this.ClientSize = new System.Drawing.Size(1091, 938);
+            this.Controls.Add(this.btnSeeResponse);
             this.Controls.Add(this.IconEmail);
             this.Controls.Add(this.IconContact);
             this.Controls.Add(this.IconAge);
@@ -994,7 +997,7 @@
         private System.Windows.Forms.PictureBox IconAge;
         private System.Windows.Forms.PictureBox IconContact;
         private System.Windows.Forms.PictureBox IconEmail;
-        private System.Windows.Forms.LinkLabel lnklblForm2;
+        private System.Windows.Forms.Button btnSeeResponse;
     }
 }
 
