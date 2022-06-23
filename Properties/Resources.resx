@@ -118,29 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="White Pastel Drawings (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\White Pastel Drawings (7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="White Pastel Drawings (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\White Pastel Drawings (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="White Pastel Drawings (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\White Pastel Drawings (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="White Pastel Drawings (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\White Pastel Drawings (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="White Pastel Drawings 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\White Pastel Drawings 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="White Pastel Drawings (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\White Pastel Drawings (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="White Pastel Drawings (9)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\White Pastel Drawings (9).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="White Pastel Drawings (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\White Pastel Drawings (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="White Pastel Drawings 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\White Pastel Drawings 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="White Pastel Drawings (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\White Pastel Drawings (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,10 +133,34 @@
   <data name="white bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\white bg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1655430101751" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1655430101751.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="White Pastel Drawings (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\White Pastel Drawings (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="White Pastel Drawings 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\White Pastel Drawings 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="White Pastel Drawings (8)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\White Pastel Drawings (8).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search e" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search e.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1655430101751" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1655430101751.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="White Pastel Drawings 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\White Pastel Drawings 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="White Pastel Drawings (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\White Pastel Drawings (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="White Pastel Drawings (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\White Pastel Drawings (7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="White Pastel Drawings (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\White Pastel Drawings (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="White Pastel Drawings (10)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\White Pastel Drawings (10).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

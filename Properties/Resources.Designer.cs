@@ -73,6 +73,16 @@ namespace Contact_Tracing.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap search_e {
+            get {
+                object obj = ResourceManager.GetObject("search e", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap white_bg {
             get {
                 object obj = ResourceManager.GetObject("white bg", resourceCulture);
@@ -86,6 +96,16 @@ namespace Contact_Tracing.Properties {
         internal static System.Drawing.Bitmap White_Pastel_Drawings__1_ {
             get {
                 object obj = ResourceManager.GetObject("White Pastel Drawings (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap White_Pastel_Drawings__10_ {
+            get {
+                object obj = ResourceManager.GetObject("White Pastel Drawings (10)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +176,16 @@ namespace Contact_Tracing.Properties {
         internal static System.Drawing.Bitmap White_Pastel_Drawings__8_ {
             get {
                 object obj = ResourceManager.GetObject("White Pastel Drawings (8)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap White_Pastel_Drawings__9_ {
+            get {
+                object obj = ResourceManager.GetObject("White Pastel Drawings (9)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
