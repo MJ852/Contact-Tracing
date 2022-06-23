@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -130,6 +131,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\White Pastel Drawings %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White Pastel Drawings %2810%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

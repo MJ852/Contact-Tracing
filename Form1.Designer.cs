@@ -168,7 +168,7 @@
             this.lblDate.AutoSize = true;
             this.lblDate.BackColor = System.Drawing.Color.Transparent;
             this.lblDate.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(819, 166);
+            this.lblDate.Location = new System.Drawing.Point(764, 166);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(58, 21);
             this.lblDate.TabIndex = 5;
@@ -352,7 +352,7 @@
             // 
             this.txtbxDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtbxDate.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbxDate.Location = new System.Drawing.Point(886, 160);
+            this.txtbxDate.Location = new System.Drawing.Point(831, 160);
             this.txtbxDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtbxDate.Name = "txtbxDate";
             this.txtbxDate.Size = new System.Drawing.Size(197, 24);
@@ -568,7 +568,7 @@
             this.lblDateFormat.AutoSize = true;
             this.lblDateFormat.BackColor = System.Drawing.Color.Transparent;
             this.lblDateFormat.Font = new System.Drawing.Font("Bookman Old Style", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateFormat.Location = new System.Drawing.Point(914, 193);
+            this.lblDateFormat.Location = new System.Drawing.Point(859, 193);
             this.lblDateFormat.Name = "lblDateFormat";
             this.lblDateFormat.Size = new System.Drawing.Size(114, 17);
             this.lblDateFormat.TabIndex = 21;
@@ -658,12 +658,14 @@
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(913, 830);
+            this.btnSave.Location = new System.Drawing.Point(797, 843);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(115, 44);
+            this.btnSave.Size = new System.Drawing.Size(115, 32);
             this.btnSave.TabIndex = 25;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -694,12 +696,14 @@
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(1036, 830);
+            this.btnExit.Location = new System.Drawing.Point(920, 843);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(108, 44);
+            this.btnExit.Size = new System.Drawing.Size(108, 32);
             this.btnExit.TabIndex = 28;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -763,7 +767,7 @@
             // 
             this.pnlDate.BackColor = System.Drawing.Color.DimGray;
             this.pnlDate.ForeColor = System.Drawing.Color.DimGray;
-            this.pnlDate.Location = new System.Drawing.Point(883, 188);
+            this.pnlDate.Location = new System.Drawing.Point(828, 188);
             this.pnlDate.Name = "pnlDate";
             this.pnlDate.Size = new System.Drawing.Size(200, 3);
             this.pnlDate.TabIndex = 31;
@@ -839,7 +843,7 @@
             this.lnklblForm2.AutoSize = true;
             this.lnklblForm2.BackColor = System.Drawing.Color.Transparent;
             this.lnklblForm2.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnklblForm2.Location = new System.Drawing.Point(911, 881);
+            this.lnklblForm2.Location = new System.Drawing.Point(810, 879);
             this.lnklblForm2.Name = "lnklblForm2";
             this.lnklblForm2.Size = new System.Drawing.Size(177, 21);
             this.lnklblForm2.TabIndex = 40;
@@ -853,7 +857,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1181, 924);
+            this.ClientSize = new System.Drawing.Size(1091, 924);
             this.Controls.Add(this.lnklblForm2);
             this.Controls.Add(this.IconEmail);
             this.Controls.Add(this.IconContact);
