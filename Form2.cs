@@ -98,42 +98,8 @@ namespace Contact_Tracing
 
         }
 
-        private void lstvwSort_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
 
-        private void lblData_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        public void datepicker_ValueChanged(object sender, EventArgs e)
-        {
-            lstbxSeeAll.Items.Clear();
-            datepicker.CustomFormat = "MM/dd/yyyy";
-            AllData(true);
-        }
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            lstbxSeeAll.Items.Clear();
-        }
-
- 
-
-        private void btnClearFilter_Click(object sender, EventArgs e)
-        {
-            AllData();
-            datepicker.CustomFormat = " ";
-            datepicker.Format = DateTimePickerFormat.Custom;
-        }
-
-        private void datepicker_CloseUp(object sender, EventArgs e)
-        {
-            lstbxSeeAll.Items.Clear();
-            datepicker.CustomFormat = "MM/dd/yyyy";
-            AllData(true);
+        
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
@@ -141,10 +107,7 @@ namespace Contact_Tracing
             this.prevForm.Show();
         }
 
-        private void lstbxSeeAll_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
     }
  }
 

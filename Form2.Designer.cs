@@ -36,6 +36,7 @@
             this.pctrbxLogo = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.grpbxSort = new System.Windows.Forms.GroupBox();
+            this.bntClearFilter = new System.Windows.Forms.Button();
             this.lblDate = new System.Windows.Forms.Label();
             this.datepicker = new System.Windows.Forms.DateTimePicker();
             this.btnSeeAll = new System.Windows.Forms.Button();
@@ -43,7 +44,6 @@
             this.lblSort = new System.Windows.Forms.Label();
             this.lstbxSeeAll = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnClear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxLogo)).BeginInit();
             this.grpbxSort.SuspendLayout();
             this.pnlSortDesign.SuspendLayout();
@@ -137,20 +137,37 @@
             this.grpbxSort.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.grpbxSort.Controls.Add(this.lblDate);
             this.grpbxSort.Controls.Add(this.datepicker);
-            this.grpbxSort.Controls.Add(this.btnSeeAll);
             this.grpbxSort.Controls.Add(this.pnlSortDesign);
-            this.grpbxSort.Location = new System.Drawing.Point(22, 160);
+            this.grpbxSort.Location = new System.Drawing.Point(24, 166);
             this.grpbxSort.Name = "grpbxSort";
-            this.grpbxSort.Size = new System.Drawing.Size(162, 335);
+            this.grpbxSort.Size = new System.Drawing.Size(162, 132);
             this.grpbxSort.TabIndex = 12;
             this.grpbxSort.TabStop = false;
             this.grpbxSort.Text = " ";
+            // 
+            // bntClearFilter
+            // 
+            this.bntClearFilter.BackColor = System.Drawing.Color.Transparent;
+            this.bntClearFilter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.bntClearFilter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bntClearFilter.FlatAppearance.BorderSize = 0;
+            this.bntClearFilter.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PaleVioletRed;
+            this.bntClearFilter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MistyRose;
+            this.bntClearFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntClearFilter.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntClearFilter.Location = new System.Drawing.Point(417, 1);
+            this.bntClearFilter.Name = "bntClearFilter";
+            this.bntClearFilter.Size = new System.Drawing.Size(129, 25);
+            this.bntClearFilter.TabIndex = 43;
+            this.bntClearFilter.Text = "Clear Filter";
+            this.bntClearFilter.UseVisualStyleBackColor = false;
+            this.bntClearFilter.Click += new System.EventHandler(this.btnClearFilter_Click);
             // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(5, 52);
+            this.lblDate.Location = new System.Drawing.Point(6, 56);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(55, 21);
             this.lblDate.TabIndex = 20;
@@ -160,12 +177,13 @@
             // 
             this.datepicker.CalendarFont = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datepicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.datepicker.Location = new System.Drawing.Point(14, 76);
+            this.datepicker.Location = new System.Drawing.Point(12, 85);
             this.datepicker.MinDate = new System.DateTime(2018, 3, 25, 0, 0, 0, 0);
             this.datepicker.Name = "datepicker";
             this.datepicker.Size = new System.Drawing.Size(131, 22);
             this.datepicker.TabIndex = 42;
             this.datepicker.Value = new System.DateTime(2022, 6, 24, 23, 59, 59, 0);
+            this.datepicker.CloseUp += new System.EventHandler(this.datepicker_CloseUp);
             this.datepicker.ValueChanged += new System.EventHandler(this.datepicker_ValueChanged);
             // 
             // btnSeeAll
@@ -173,17 +191,15 @@
             this.btnSeeAll.BackColor = System.Drawing.Color.White;
             this.btnSeeAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSeeAll.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSeeAll.FlatAppearance.BorderSize = 0;
             this.btnSeeAll.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PaleVioletRed;
             this.btnSeeAll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MistyRose;
             this.btnSeeAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeeAll.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSeeAll.Location = new System.Drawing.Point(5, 111);
+            this.btnSeeAll.Location = new System.Drawing.Point(27, 314);
             this.btnSeeAll.Name = "btnSeeAll";
-            this.btnSeeAll.Size = new System.Drawing.Size(154, 28);
+            this.btnSeeAll.Size = new System.Drawing.Size(154, 32);
             this.btnSeeAll.TabIndex = 14;
             this.btnSeeAll.Text = "See all";
-            this.btnSeeAll.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSeeAll.UseVisualStyleBackColor = false;
             this.btnSeeAll.Click += new System.EventHandler(this.btnSeeAll_Click);
             // 
@@ -221,27 +237,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel1.Controls.Add(this.btnClear);
-            this.panel1.Location = new System.Drawing.Point(226, 468);
+            this.panel1.Controls.Add(this.bntClearFilter);
+            this.panel1.Location = new System.Drawing.Point(226, 475);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(547, 27);
             this.panel1.TabIndex = 16;
-            // 
-            // btnClear
-            // 
-            this.btnClear.BackColor = System.Drawing.Color.Transparent;
-            this.btnClear.FlatAppearance.BorderSize = 0;
-            this.btnClear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnClear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MistyRose;
-            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Font = new System.Drawing.Font("Bookman Old Style", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(470, 0);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(67, 25);
-            this.btnClear.TabIndex = 20;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = false;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // Form2
             // 
@@ -253,6 +253,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lstbxSeeAll);
             this.Controls.Add(this.grpbxSort);
+            this.Controls.Add(this.btnSeeAll);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.lblInformation);
@@ -263,6 +264,7 @@
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form Responses";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxLogo)).EndInit();
             this.grpbxSort.ResumeLayout(false);
             this.grpbxSort.PerformLayout();
@@ -289,6 +291,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.DateTimePicker datepicker;
-        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button bntClearFilter;
     }
 }
