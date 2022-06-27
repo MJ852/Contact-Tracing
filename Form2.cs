@@ -17,16 +17,18 @@ namespace Contact_Tracing
 
         List<string> response = new List<string>();
         List<ListViewItem> items = new List<ListViewItem>();
+        Form1 prevForm;
         
 
-        public Form2()
+        public Form2(Form1 prevForm)
         {
-
-            InitializeComponent();
             
 
+            InitializeComponent();
+            datepicker.CustomFormat = " ";
+            datepicker.Format = DateTimePickerFormat.Custom;
 
-
+            this.prevForm = prevForm;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -37,17 +39,45 @@ namespace Contact_Tracing
         public void btnSeeAll_Click(object sender, EventArgs e)
         {
             AllData();
+            datepicker.CustomFormat = " ";
+            datepicker.Format = DateTimePickerFormat.Custom;
         }
 
-        public void AllData()
+        public void AllData(bool sorted = false)
         {
-            lstvwSort.Items.Clear();
+            lstbxSeeAll.Items.Clear();
             StreamReader ReadInformation;
-            ReadInformation = File.OpenText(@"C:\Users\Joyce\Documents\MJ\SUBJECTS\Health_Information.txt");
+            ReadInformation = File.OpenText(@".\Health_Information.txt");
 
+            bool wait = false;
             while (!ReadInformation.EndOfStream)
             {
-                lstbxSeeAll.Items.Add(ReadInformation.ReadLine());
+                String[] strLine = ReadInformation.ReadLine().Split(':');
+                if (sorted && strLine[0] == "Date")
+                    wait = strLine[1] != datepicker.Value.ToString("MM/dd/yyyy");
+                
+                if (wait && sorted)
+                    continue;
+
+                if (strLine[0] == "Symptoms")
+                {
+                    String[] strSymptoms = strLine[1].Split(';');
+
+                    if (strLine[1] == "")
+                        lstbxSeeAll.Items.Add("No Symptoms");
+                    else
+                        lstbxSeeAll.Items.Add(strLine[0] + ":");
+
+                    foreach (String iSymptoms in strSymptoms)
+                        if (iSymptoms != "")
+                            lstbxSeeAll.Items.Add(" ●  " + iSymptoms);
+
+                }
+                else if (strLine[0] == "")
+                    lstbxSeeAll.Items.Add("");
+                else
+                    lstbxSeeAll.Items.Add(strLine[0] + ":  " + strLine[1]);
+                
             }
 
             ReadInformation.Close();
@@ -70,59 +100,51 @@ namespace Contact_Tracing
 
         private void lstvwSort_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
-    }
+        }
 
-    private void lblData_Click(object sender, EventArgs e)
-    {
+        private void lblData_Click(object sender, EventArgs e)
+        {
 
-    }
+        }
 
 
         public void datepicker_ValueChanged(object sender, EventArgs e)
         {
             lstbxSeeAll.Items.Clear();
-            lstvwSort.Items.Clear();
-            FilterDate();
-           
-           
-            
-
+            datepicker.CustomFormat = "MM/dd/yyyy";
+            AllData(true);
         }
 
-         private void btnClear_Click(object sender, EventArgs e)
+        private void btnClear_Click(object sender, EventArgs e)
         {
-            lstvwSort.Items.Clear();
             lstbxSeeAll.Items.Clear();
         }
 
-        private void FilterDate()
+ 
+
+        private void btnClearFilter_Click(object sender, EventArgs e)
         {
-            int counter = 0;
-            string line;
-
-            try
-            {
-                StreamReader ReadInformation;
-                ReadInformation = File.OpenText(@"C:\Users\Joyce\Documents\MJ\SUBJECTS\Health_Information.txt");
-                List<int> list = new List<int>();
-
-                while ((line = ReadInformation.ReadLine()) != null)
-                {
-                    lstvwSort.Items.Add(line);
-                    list.Add(int.Parse(line));
-                    counter++;
-                }
-
-                int[] arr = list.ToArray();
-                ReadInformation.Close();
-            }
-            catch { }
-            
+            AllData();
+            datepicker.CustomFormat = " ";
+            datepicker.Format = DateTimePickerFormat.Custom;
         }
 
-       
+        private void datepicker_CloseUp(object sender, EventArgs e)
+        {
+            lstbxSeeAll.Items.Clear();
+            datepicker.CustomFormat = "MM/dd/yyyy";
+            AllData(true);
+        }
 
+        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.prevForm.Show();
+        }
+
+        private void lstbxSeeAll_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
  }
 
