@@ -74,7 +74,7 @@ namespace Contact_Tracing
         public void btnSave_Click(object sender, EventArgs e)
         {
             int answer = 0;
-            // Change the location of the data file
+
             StreamWriter information = File.AppendText(@"C:\Users\Joyce Calangian\Documents\MJ\PUP\SUBJECTS\Health_Information.txt");
             information.WriteLine("Date:" + datepickerMain.Value.ToString("MM/dd/yyyy"));
             information.WriteLine("Name:" + txtbxName1.Text);

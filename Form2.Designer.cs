@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.lblHealth_Response = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
@@ -43,8 +41,6 @@
             this.btnSeeAll = new System.Windows.Forms.Button();
             this.pnlSortDesign = new System.Windows.Forms.Panel();
             this.lblSort = new System.Windows.Forms.Label();
-            this.lstvwSort = new System.Windows.Forms.ListView();
-            this.clmnhDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lstbxSeeAll = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnClear = new System.Windows.Forms.Button();
@@ -85,7 +81,7 @@
             // 
             this.lblInformation.AutoSize = true;
             this.lblInformation.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInformation.Location = new System.Drawing.Point(634, 150);
+            this.lblInformation.Location = new System.Drawing.Point(638, 130);
             this.lblInformation.Name = "lblInformation";
             this.lblInformation.Size = new System.Drawing.Size(125, 23);
             this.lblInformation.TabIndex = 5;
@@ -102,7 +98,7 @@
             this.btnSearch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(579, 139);
+            this.btnSearch.Location = new System.Drawing.Point(583, 119);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(56, 43);
             this.btnSearch.TabIndex = 10;
@@ -210,28 +206,6 @@
             this.lblSort.TabIndex = 13;
             this.lblSort.Text = "Sort by . . .";
             // 
-            // lstvwSort
-            // 
-            this.lstvwSort.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.clmnhDate});
-            this.lstvwSort.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstvwSort.HideSelection = false;
-            this.lstvwSort.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2});
-            this.lstvwSort.Location = new System.Drawing.Point(223, 186);
-            this.lstvwSort.Name = "lstvwSort";
-            this.lstvwSort.Size = new System.Drawing.Size(547, 306);
-            this.lstvwSort.TabIndex = 17;
-            this.lstvwSort.UseCompatibleStateImageBehavior = false;
-            this.lstvwSort.View = System.Windows.Forms.View.Details;
-            this.lstvwSort.SelectedIndexChanged += new System.EventHandler(this.lstvwSort_SelectedIndexChanged);
-            // 
-            // clmnhDate
-            // 
-            this.clmnhDate.Text = "Date";
-            this.clmnhDate.Width = 135;
-            // 
             // lstbxSeeAll
             // 
             this.lstbxSeeAll.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -239,9 +213,9 @@
             this.lstbxSeeAll.FormattingEnabled = true;
             this.lstbxSeeAll.HorizontalScrollbar = true;
             this.lstbxSeeAll.ItemHeight = 20;
-            this.lstbxSeeAll.Location = new System.Drawing.Point(401, 186);
+            this.lstbxSeeAll.Location = new System.Drawing.Point(226, 166);
             this.lstbxSeeAll.Name = "lstbxSeeAll";
-            this.lstbxSeeAll.Size = new System.Drawing.Size(372, 304);
+            this.lstbxSeeAll.Size = new System.Drawing.Size(547, 324);
             this.lstbxSeeAll.TabIndex = 19;
             // 
             // panel1
@@ -278,7 +252,6 @@
             this.ClientSize = new System.Drawing.Size(844, 624);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lstbxSeeAll);
-            this.Controls.Add(this.lstvwSort);
             this.Controls.Add(this.grpbxSort);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSearch);
@@ -312,8 +285,6 @@
         private System.Windows.Forms.Button btnSeeAll;
         private System.Windows.Forms.Label lblSort;
         private System.Windows.Forms.Panel pnlSortDesign;
-        private System.Windows.Forms.ListView lstvwSort;
-        private System.Windows.Forms.ColumnHeader clmnhDate;
         private System.Windows.Forms.ListBox lstbxSeeAll;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblDate;

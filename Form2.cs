@@ -47,7 +47,7 @@ namespace Contact_Tracing
         {
             lstbxSeeAll.Items.Clear();
             StreamReader ReadInformation;
-            ReadInformation = File.OpenText(@".\Health_Information.txt");
+            ReadInformation = File.OpenText(@"C:\Users\Joyce Calangian\Documents\MJ\PUP\SUBJECTS\Health_Information.txt");
 
             bool wait = false;
             while (!ReadInformation.EndOfStream)
