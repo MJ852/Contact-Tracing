@@ -11,15 +11,15 @@ using System.Windows.Forms;
 
 namespace Contact_Tracing
 {
-    public partial class txtbxName : Form
+    public partial class Form1 : Form
     {
-
-        public txtbxName()
+        public static Form1 instance;
+        public DateTime dt1;
+        public Form1()
         {
             InitializeComponent();
+            
         }
-
-
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -73,108 +73,76 @@ namespace Contact_Tracing
 
         public void btnSave_Click(object sender, EventArgs e)
         {
-            StreamWriter information = File.AppendText(@"C:\Users\Joyce Calangian\Documents\MJ\PUP\SUBJECTS\Health_Information.txt");
-            information.WriteLine("Date: " + txtbxDate.Text);
-            information.WriteLine("Name: " + txtbxName1.Text);
-            information.WriteLine("Address: " + txtbxAddress.Text);
-            information.WriteLine("Age: " + txtbxAge.Text);
-            information.WriteLine("Contact Number: " + txtbxContact.Text);
-            information.WriteLine("Email: " + txtbxEmail.Text);
-            information.WriteLine("Body Temp:  " + txtbxBodyTemp.Text);
+            int answer = 0;
+            // Change the location of the data file
+            StreamWriter information = File.AppendText(@".\Health_Information.txt");
+            information.WriteLine("Date:" + datepickerMain.Value.ToString("MM/dd/yyyy"));
+            information.WriteLine("Name:" + txtbxName1.Text);
+            information.WriteLine("Address:" + txtbxAddress.Text);
+            information.WriteLine("Age:" + txtbxAge.Text);
+            information.WriteLine("Contact Number:" + txtbxContact.Text);
+            information.WriteLine("Email:" + txtbxEmail.Text);
+            information.WriteLine("Body Temp:" + txtbxBodyTemp.Text);
 
             //Sex
             if (rdbtnMale.Checked)
-            {
-                information.WriteLine("Sex: Male");
-            }
+                information.WriteLine("Sex:Male");
             else
-            {
-                information.WriteLine("Sex: Female");
-            }
+                information.WriteLine("Sex:Female");
 
             //Question 1
             if (rdbtnQ1Yes.Checked)
-            {
-                information.WriteLine("Close contact w/ COVID within two weeks: Yes");
-            }
+                information.WriteLine("Close contact w/ COVID within two weeks:Yes");
             else
-            {
-                information.WriteLine("Close contact w/ COVID within two weeks: No");
-            }
+                information.WriteLine("Close contact w/ COVID within two weeks:No");
 
             //Vaccination status
             if (rdbtnVaccinationYes.Checked)
-            {
-                information.WriteLine("Vaccination Status: Fully Vaccinated");
-
-            }
-
-
+                information.WriteLine("Vaccination Status:Fully Vaccinated");
             else if (rdbtnVaccinationFirstdose.Checked)
-            {
-                information.WriteLine("Vaccination Status: First dose only");
-            }
+                information.WriteLine("Vaccination Status:First dose only");
 
             else if (rdbtnVaccinationNo.Checked)
-            {
-                information.WriteLine("Vaccination Status: Not yet vaccinated");
-            }
-        
-
-            //Symptoms
-            information.WriteLine("Symptoms: "  );
+                information.WriteLine("Vaccination Status:Not yet vaccinated");
 
             
+            //Symptoms
+            information.Write("Symptoms:"  );
             if (chckbxSymptoms1.Checked)
-            {
-                information.WriteLine("Fever");
-            }
+                information.Write("Fever" + ";");
 
-             if (chckbxSymptoms2.Checked)
-            {
-                information.WriteLine("Breathing difficulties");
-            }
+            if (chckbxSymptoms2.Checked)
+                information.Write("Breathing difficulties" + ";");
+
             if (chckbxSymptoms3.Checked)
-            {
-                information.WriteLine("Loss of taste or smell");
-            }
+                information.Write("Loss of taste or smell" + ";");
+
             if (chckbxSymptoms4.Checked)
-            {
-                information.WriteLine("Body aches");
-            }
+                information.Write("Body aches" + ";");
+
             if (chckbxSymptoms5.Checked)
-            {
-                information.WriteLine("Dry cough");
-            }
+                information.Write("Dry cough" + ";");
+
             if (chckbxSymptoms6.Checked)
-            {
-                information.WriteLine("Sore throat");
+                information.Write("Sore throat" + ";");
 
-            }
             if (chckbxSymptoms7.Checked)
-            {
-                information.WriteLine("Runny nose");
+                information.Write("Runny nose" + ";");
 
-            }
             if (chckbxSymptoms8.Checked)
-            {
-                information.WriteLine("Diarrhea");
-            }
-            if (chckbxSymptoms9.Checked)
-            {
-                information.WriteLine("Headache");
-            }
+                information.Write("Diarrhea" + ";");
 
-            if  (chckbxSymptoms10.Checked)
-                {
-                information.WriteLine("None");
-            }
+            if (chckbxSymptoms9.Checked)
+                information.Write("Headache" + ";");
+
 
             
             
 
             information.WriteLine("");
+            information.WriteLine("");
             information.Close();
+            answer++;
 
             Application.Restart();
         }
@@ -206,7 +174,10 @@ namespace Contact_Tracing
 
         private void btnSeeResponse_Click(object sender, EventArgs e)
         {
-            new Form2().Show();
+            this.Hide();
+            Form2 form = new Form2(this);
+            form.Show();
+
         }
     }
 }

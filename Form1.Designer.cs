@@ -1,6 +1,6 @@
 ﻿namespace Contact_Tracing
 {
-    partial class txtbxName
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(txtbxName));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pctrbxLogo = new System.Windows.Forms.PictureBox();
             this.lblPrivacyNotice = new System.Windows.Forms.Label();
             this.lblContact_Tracing = new System.Windows.Forms.Label();
@@ -50,7 +50,6 @@
             this.txtbxEmail = new System.Windows.Forms.TextBox();
             this.lblBodyTemp = new System.Windows.Forms.Label();
             this.txtbxBodyTemp = new System.Windows.Forms.TextBox();
-            this.txtbxDate = new System.Windows.Forms.TextBox();
             this.grpbxQ1 = new System.Windows.Forms.GroupBox();
             this.rdbtnQ1No = new System.Windows.Forms.RadioButton();
             this.rdbtnQ1Yes = new System.Windows.Forms.RadioButton();
@@ -66,7 +65,6 @@
             this.chckbxSymptoms5 = new System.Windows.Forms.CheckBox();
             this.chckbxSymptoms1 = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblDateFormat = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.grpbxQ4 = new System.Windows.Forms.GroupBox();
             this.rdbtnVaccinationNo = new System.Windows.Forms.RadioButton();
@@ -91,6 +89,7 @@
             this.IconContact = new System.Windows.Forms.PictureBox();
             this.IconEmail = new System.Windows.Forms.PictureBox();
             this.btnSeeResponse = new System.Windows.Forms.Button();
+            this.datepickerMain = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxLogo)).BeginInit();
             this.grpbxGender.SuspendLayout();
             this.grpbxQ1.SuspendLayout();
@@ -348,16 +347,6 @@
             this.txtbxBodyTemp.Size = new System.Drawing.Size(300, 24);
             this.txtbxBodyTemp.TabIndex = 19;
             // 
-            // txtbxDate
-            // 
-            this.txtbxDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtbxDate.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbxDate.Location = new System.Drawing.Point(831, 160);
-            this.txtbxDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtbxDate.Name = "txtbxDate";
-            this.txtbxDate.Size = new System.Drawing.Size(197, 24);
-            this.txtbxDate.TabIndex = 20;
-            // 
             // grpbxQ1
             // 
             this.grpbxQ1.BackColor = System.Drawing.Color.Transparent;
@@ -562,17 +551,6 @@
             this.label1.Size = new System.Drawing.Size(141, 17);
             this.label1.TabIndex = 21;
             this.label1.Text = "(Check all that apply)";
-            // 
-            // lblDateFormat
-            // 
-            this.lblDateFormat.AutoSize = true;
-            this.lblDateFormat.BackColor = System.Drawing.Color.Transparent;
-            this.lblDateFormat.Font = new System.Drawing.Font("Bookman Old Style", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateFormat.Location = new System.Drawing.Point(859, 193);
-            this.lblDateFormat.Name = "lblDateFormat";
-            this.lblDateFormat.Size = new System.Drawing.Size(114, 17);
-            this.lblDateFormat.TabIndex = 21;
-            this.lblDateFormat.Text = "(mm / dd / yyyy)";
             // 
             // label2
             // 
@@ -854,13 +832,25 @@
             this.btnSeeResponse.UseVisualStyleBackColor = false;
             this.btnSeeResponse.Click += new System.EventHandler(this.btnSeeResponse_Click);
             // 
-            // txtbxName
+            // datepickerMain
+            // 
+            this.datepickerMain.CalendarFont = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datepickerMain.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.datepickerMain.Location = new System.Drawing.Point(828, 165);
+            this.datepickerMain.MinDate = new System.DateTime(2018, 3, 25, 0, 0, 0, 0);
+            this.datepickerMain.Name = "datepickerMain";
+            this.datepickerMain.Size = new System.Drawing.Size(200, 22);
+            this.datepickerMain.TabIndex = 41;
+            this.datepickerMain.Value = new System.DateTime(2022, 6, 24, 23, 59, 59, 0);
+            // 
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AutoSize = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1091, 938);
+            this.ClientSize = new System.Drawing.Size(1091, 951);
+            this.Controls.Add(this.datepickerMain);
             this.Controls.Add(this.btnSeeResponse);
             this.Controls.Add(this.IconEmail);
             this.Controls.Add(this.IconContact);
@@ -882,10 +872,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.grpbxQ4);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.lblDateFormat);
             this.Controls.Add(this.grpbxQ2);
             this.Controls.Add(this.grpbxQ1);
-            this.Controls.Add(this.txtbxDate);
             this.Controls.Add(this.txtbxBodyTemp);
             this.Controls.Add(this.lblBodyTemp);
             this.Controls.Add(this.txtbxEmail);
@@ -909,7 +897,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "txtbxName";
+            this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Health Form";
@@ -957,7 +945,6 @@
         private System.Windows.Forms.TextBox txtbxEmail;
         private System.Windows.Forms.Label lblBodyTemp;
         private System.Windows.Forms.TextBox txtbxBodyTemp;
-        private System.Windows.Forms.TextBox txtbxDate;
         private System.Windows.Forms.GroupBox grpbxQ1;
         private System.Windows.Forms.RadioButton rdbtnQ1No;
         private System.Windows.Forms.RadioButton rdbtnQ1Yes;
@@ -969,7 +956,6 @@
         private System.Windows.Forms.CheckBox chckbxSymptoms1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox chckbxSymptoms6;
-        private System.Windows.Forms.Label lblDateFormat;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox grpbxQ4;
         private System.Windows.Forms.RadioButton rdbtnVaccinationNo;
@@ -998,6 +984,7 @@
         private System.Windows.Forms.PictureBox IconContact;
         private System.Windows.Forms.PictureBox IconEmail;
         private System.Windows.Forms.Button btnSeeResponse;
+        private System.Windows.Forms.DateTimePicker datepickerMain;
     }
 }
 

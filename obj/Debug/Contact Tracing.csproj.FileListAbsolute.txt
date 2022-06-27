@@ -8,5 +8,5 @@ C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact Tracing.
 C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact Tracing.csproj.CoreCompileInputs.cache
 C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact Tracing.exe
 C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact Tracing.pdb
-C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact_Tracing.txtbxName.resources
 C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact_Tracing.Form2.resources
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact_Tracing.Form1.resources

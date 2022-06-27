@@ -16,7 +16,7 @@ namespace Contact_Tracing
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new txtbxName());
+            Application.Run(new Form1());
         }
     }
 }
