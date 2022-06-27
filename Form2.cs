@@ -97,9 +97,28 @@ namespace Contact_Tracing
             this.Close();
 
         }
+        public void datepicker_ValueChanged(object sender, EventArgs e)
+        {
+            lstbxSeeAll.Items.Clear();
+            datepicker.CustomFormat = "MM/dd/yyyy";
+            AllData(true);
+        }
+
+        private void btnClearFilter_Click(object sender, EventArgs e)
+        {
+            AllData();
+            datepicker.CustomFormat = " ";
+            datepicker.Format = DateTimePickerFormat.Custom;
+            lstbxSeeAll.Items.Clear();
+        }
+
+        private void datepicker_CloseUp(object sender, EventArgs e)
+        {
+            lstbxSeeAll.Items.Clear();
+            datepicker.CustomFormat = "MM/dd/yyyy";
+            AllData(true);
 
 
-        
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
