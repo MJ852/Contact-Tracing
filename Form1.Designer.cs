@@ -30,10 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pctrbxLogo = new System.Windows.Forms.PictureBox();
-            this.lblPrivacyNotice = new System.Windows.Forms.Label();
             this.lblContact_Tracing = new System.Windows.Forms.Label();
-            this.lblPrvcyNtc2 = new System.Windows.Forms.Label();
-            this.lblPrvcyNtc3 = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.lblAddress = new System.Windows.Forms.Label();
@@ -91,6 +88,12 @@
             this.btnSeeResponse = new System.Windows.Forms.Button();
             this.datepickerMain = new System.Windows.Forms.DateTimePicker();
             this.bntQRCode = new System.Windows.Forms.Button();
+            this.pnlQR = new System.Windows.Forms.Panel();
+            this.btnDoneQr = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pctrbxQR = new System.Windows.Forms.PictureBox();
+            this.pctrbxScan = new System.Windows.Forms.PictureBox();
+            this.lblScan = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxLogo)).BeginInit();
             this.grpbxGender.SuspendLayout();
             this.grpbxQ1.SuspendLayout();
@@ -102,6 +105,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.IconAge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconContact)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconEmail)).BeginInit();
+            this.pnlQR.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxQR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxScan)).BeginInit();
             this.SuspendLayout();
             // 
             // pctrbxLogo
@@ -116,59 +122,24 @@
             this.pctrbxLogo.TabIndex = 0;
             this.pctrbxLogo.TabStop = false;
             // 
-            // lblPrivacyNotice
-            // 
-            this.lblPrivacyNotice.AutoSize = true;
-            this.lblPrivacyNotice.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrivacyNotice.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrivacyNotice.Location = new System.Drawing.Point(203, 102);
-            this.lblPrivacyNotice.Name = "lblPrivacyNotice";
-            this.lblPrivacyNotice.Size = new System.Drawing.Size(142, 21);
-            this.lblPrivacyNotice.TabIndex = 1;
-            this.lblPrivacyNotice.Text = "Privacy Notice";
-            this.lblPrivacyNotice.Click += new System.EventHandler(this.label1_Click);
-            // 
             // lblContact_Tracing
             // 
             this.lblContact_Tracing.AutoSize = true;
             this.lblContact_Tracing.BackColor = System.Drawing.Color.Transparent;
             this.lblContact_Tracing.Font = new System.Drawing.Font("Bookman Old Style", 37.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContact_Tracing.Location = new System.Drawing.Point(192, 22);
+            this.lblContact_Tracing.Location = new System.Drawing.Point(191, 41);
             this.lblContact_Tracing.Name = "lblContact_Tracing";
             this.lblContact_Tracing.Size = new System.Drawing.Size(652, 71);
             this.lblContact_Tracing.TabIndex = 2;
             this.lblContact_Tracing.Text = "CONTACT TRACING";
             this.lblContact_Tracing.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // lblPrvcyNtc2
-            // 
-            this.lblPrvcyNtc2.AutoSize = true;
-            this.lblPrvcyNtc2.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrvcyNtc2.Font = new System.Drawing.Font("Bookman Old Style", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrvcyNtc2.Location = new System.Drawing.Point(223, 126);
-            this.lblPrvcyNtc2.Name = "lblPrvcyNtc2";
-            this.lblPrvcyNtc2.Size = new System.Drawing.Size(672, 18);
-            this.lblPrvcyNtc2.TabIndex = 3;
-            this.lblPrvcyNtc2.Text = "Please answer the question below honestly and cooperate with us so that we can en" +
-    "sure your safety. ";
-            // 
-            // lblPrvcyNtc3
-            // 
-            this.lblPrvcyNtc3.AutoSize = true;
-            this.lblPrvcyNtc3.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrvcyNtc3.Font = new System.Drawing.Font("Bookman Old Style", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrvcyNtc3.Location = new System.Drawing.Point(223, 144);
-            this.lblPrvcyNtc3.Name = "lblPrvcyNtc3";
-            this.lblPrvcyNtc3.Size = new System.Drawing.Size(407, 18);
-            this.lblPrvcyNtc3.TabIndex = 4;
-            this.lblPrvcyNtc3.Text = "All of the details you provide in this form will be kept private.";
-            // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.BackColor = System.Drawing.Color.Transparent;
             this.lblDate.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(764, 166);
+            this.lblDate.Location = new System.Drawing.Point(761, 167);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(58, 21);
             this.lblDate.TabIndex = 5;
@@ -746,7 +717,7 @@
             // 
             this.pnlDate.BackColor = System.Drawing.Color.DimGray;
             this.pnlDate.ForeColor = System.Drawing.Color.DimGray;
-            this.pnlDate.Location = new System.Drawing.Point(828, 188);
+            this.pnlDate.Location = new System.Drawing.Point(825, 189);
             this.pnlDate.Name = "pnlDate";
             this.pnlDate.Size = new System.Drawing.Size(200, 3);
             this.pnlDate.TabIndex = 31;
@@ -837,7 +808,7 @@
             // 
             this.datepickerMain.CalendarFont = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datepickerMain.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.datepickerMain.Location = new System.Drawing.Point(828, 165);
+            this.datepickerMain.Location = new System.Drawing.Point(825, 166);
             this.datepickerMain.MinDate = new System.DateTime(2018, 3, 25, 0, 0, 0, 0);
             this.datepickerMain.Name = "datepickerMain";
             this.datepickerMain.Size = new System.Drawing.Size(200, 22);
@@ -851,7 +822,7 @@
             this.bntQRCode.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
             this.bntQRCode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntQRCode.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntQRCode.Location = new System.Drawing.Point(402, 890);
+            this.bntQRCode.Location = new System.Drawing.Point(423, 890);
             this.bntQRCode.Margin = new System.Windows.Forms.Padding(4);
             this.bntQRCode.Name = "bntQRCode";
             this.bntQRCode.Size = new System.Drawing.Size(215, 32);
@@ -860,13 +831,88 @@
             this.bntQRCode.UseVisualStyleBackColor = false;
             this.bntQRCode.Click += new System.EventHandler(this.bntQRCode_Click);
             // 
+            // pnlQR
+            // 
+            this.pnlQR.BackColor = System.Drawing.Color.MistyRose;
+            this.pnlQR.Controls.Add(this.btnDoneQr);
+            this.pnlQR.Controls.Add(this.label6);
+            this.pnlQR.Controls.Add(this.pctrbxQR);
+            this.pnlQR.Location = new System.Drawing.Point(192, 167);
+            this.pnlQR.Name = "pnlQR";
+            this.pnlQR.Size = new System.Drawing.Size(663, 598);
+            this.pnlQR.TabIndex = 43;
+            this.pnlQR.Visible = false;
+            // 
+            // btnDoneQr
+            // 
+            this.btnDoneQr.BackColor = System.Drawing.Color.Transparent;
+            this.btnDoneQr.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnDoneQr.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnDoneQr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoneQr.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoneQr.Location = new System.Drawing.Point(536, 546);
+            this.btnDoneQr.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDoneQr.Name = "btnDoneQr";
+            this.btnDoneQr.Size = new System.Drawing.Size(115, 32);
+            this.btnDoneQr.TabIndex = 44;
+            this.btnDoneQr.Text = "Done";
+            this.btnDoneQr.UseVisualStyleBackColor = false;
+            this.btnDoneQr.Click += new System.EventHandler(this.btnDoneQr_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.label6.Font = new System.Drawing.Font("Bookman Old Style", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(0, 2);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(652, 50);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "     SAVE YOUR QR CODE    ";
+            // 
+            // pctrbxQR
+            // 
+            this.pctrbxQR.Location = new System.Drawing.Point(14, 66);
+            this.pctrbxQR.Name = "pctrbxQR";
+            this.pctrbxQR.Size = new System.Drawing.Size(637, 473);
+            this.pctrbxQR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctrbxQR.TabIndex = 0;
+            this.pctrbxQR.TabStop = false;
+            // 
+            // pctrbxScan
+            // 
+            this.pctrbxScan.Image = global::Contact_Tracing.Properties.Resources.navheader_qr_code1;
+            this.pctrbxScan.Location = new System.Drawing.Point(920, 22);
+            this.pctrbxScan.Name = "pctrbxScan";
+            this.pctrbxScan.Size = new System.Drawing.Size(104, 90);
+            this.pctrbxScan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrbxScan.TabIndex = 44;
+            this.pctrbxScan.TabStop = false;
+            this.pctrbxScan.Click += new System.EventHandler(this.pctrbxScan_Click);
+            // 
+            // lblScan
+            // 
+            this.lblScan.AutoSize = true;
+            this.lblScan.BackColor = System.Drawing.Color.Transparent;
+            this.lblScan.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScan.Location = new System.Drawing.Point(916, 115);
+            this.lblScan.Name = "lblScan";
+            this.lblScan.Size = new System.Drawing.Size(109, 21);
+            this.lblScan.TabIndex = 45;
+            this.lblScan.Text = "Scan Here!";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1091, 951);
+            this.ClientSize = new System.Drawing.Size(1091, 967);
+            this.Controls.Add(this.lblScan);
+            this.Controls.Add(this.pctrbxScan);
+            this.Controls.Add(this.pnlQR);
             this.Controls.Add(this.bntQRCode);
             this.Controls.Add(this.datepickerMain);
             this.Controls.Add(this.btnSeeResponse);
@@ -906,10 +952,7 @@
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblDate);
-            this.Controls.Add(this.lblPrvcyNtc3);
-            this.Controls.Add(this.lblPrvcyNtc2);
             this.Controls.Add(this.lblContact_Tracing);
-            this.Controls.Add(this.lblPrivacyNotice);
             this.Controls.Add(this.pctrbxLogo);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -935,6 +978,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.IconAge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconContact)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconEmail)).EndInit();
+            this.pnlQR.ResumeLayout(false);
+            this.pnlQR.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxQR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxScan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -943,10 +990,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pctrbxLogo;
-        private System.Windows.Forms.Label lblPrivacyNotice;
         private System.Windows.Forms.Label lblContact_Tracing;
-        private System.Windows.Forms.Label lblPrvcyNtc2;
-        private System.Windows.Forms.Label lblPrvcyNtc3;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblAddress;
@@ -1004,6 +1048,12 @@
         private System.Windows.Forms.Button btnSeeResponse;
         private System.Windows.Forms.DateTimePicker datepickerMain;
         private System.Windows.Forms.Button bntQRCode;
+        private System.Windows.Forms.Panel pnlQR;
+        private System.Windows.Forms.PictureBox pctrbxQR;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnDoneQr;
+        private System.Windows.Forms.PictureBox pctrbxScan;
+        private System.Windows.Forms.Label lblScan;
     }
 }
 

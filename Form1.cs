@@ -16,10 +16,11 @@ namespace Contact_Tracing
     {
         public static Form1 instance;
         public DateTime dt1;
+        int panel = -1;
         public Form1()
         {
             InitializeComponent();
-            
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -106,9 +107,9 @@ namespace Contact_Tracing
             else if (rdbtnVaccinationNo.Checked)
                 information.WriteLine("Vaccination Status:Not yet vaccinated");
 
-            
+
             //Symptoms
-            information.Write("Symptoms:"  );
+            information.Write("Symptoms:");
             if (chckbxSymptoms1.Checked)
                 information.Write("Fever" + ";");
 
@@ -137,8 +138,8 @@ namespace Contact_Tracing
                 information.Write("Headache" + ";");
 
 
-            
-            
+
+
 
             information.WriteLine("");
             information.WriteLine("");
@@ -150,28 +151,28 @@ namespace Contact_Tracing
 
         private void grpbxGender_Enter(object sender, EventArgs e)
         {
-           
+
 
         }
 
         private void rdbtnQ1Yes_CheckedChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            
+
             this.Close();
         }
 
         private void rdbtnVaccinationYes_CheckedChanged(object sender, EventArgs e)
         {
-            
+
 
         }
 
-       
+
 
         private void btnSeeResponse_Click(object sender, EventArgs e)
         {
@@ -183,8 +184,69 @@ namespace Contact_Tracing
 
         private void bntQRCode_Click(object sender, EventArgs e)
         {
-            QRCodeGenerator qr = new QRCodeGenerator();
-            QRCodeData data = qr.CreateQrCode();
+            
+            panel *= 0;
+            Form1 form1 = new Form1();
+
+            if (panel == 1)
+            {
+                pnlQR.Hide();
+               form1.Hide();
+            }
+            else
+            {
+                pnlQR.Show(); 
+            }
+
+            Generate();
+            
+
+        }
+
+        private void Generate()
+        {
+            try
+            {
+                QRCodeGenerator qr = new QRCodeGenerator();
+
+
+                var qrText = datepickerMain.Value + ";" +
+                txtbxName1.Text + ";" +
+                txtbxAddress.Text + ";" +
+                txtbxAge.Text + ";" +
+                txtbxContact.Text + ";" +
+                txtbxEmail.Text + ";" +
+                txtbxBodyTemp.Text + ";" +
+                grpbxGender.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text + ";" +
+                grpbxQ1.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text + ";" +
+                grpbxQ4.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text + ";" +
+                grpbxQ2.Controls.OfType<CheckBox>().Where(c => c.Checked).ToString() + ";";
+
+                QRCodeData data = qr.CreateQrCode(qrText, QRCodeGenerator.ECCLevel.Q);
+                QRCode code = new QRCode(data);
+                pctrbxQR.Image = code.GetGraphic(5);
+            }
+            catch { }
+            
+           
+        }
+            
+        
+        private void btnDoneQr_Click(object sender, EventArgs e)
+        {
+            pnlQR.Hide();
+        }
+
+        private void pctrbxScan_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form3 form3 = new Form3();
+            form3.Show();
+            
+        }
+
+        private void lblPrvcyNtc2_Click(object sender, EventArgs e)
+        {
 
         }
     }

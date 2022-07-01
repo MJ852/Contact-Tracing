@@ -10,3 +10,16 @@ C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact Tracing.
 C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact Tracing.pdb
 C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact_Tracing.Form2.resources
 C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact_Tracing.Form1.resources
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\bin\Debug\AForge.dll
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\bin\Debug\AForge.Video.dll
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\bin\Debug\QRCoder.dll
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\bin\Debug\zxing.dll
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\bin\Debug\zxing.presentation.dll
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\bin\Debug\AForge.xml
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\bin\Debug\AForge.Video.xml
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\bin\Debug\zxing.xml
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\bin\Debug\zxing.presentation.xml
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact Tracing.csproj.CopyComplete
+C:\Users\Joyce Calangian\source\repos\Contact Tracing\obj\Debug\Contact_Tracing.Form3.resources
