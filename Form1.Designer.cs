@@ -90,6 +90,7 @@
             this.IconEmail = new System.Windows.Forms.PictureBox();
             this.btnSeeResponse = new System.Windows.Forms.Button();
             this.datepickerMain = new System.Windows.Forms.DateTimePicker();
+            this.bntQRCode = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxLogo)).BeginInit();
             this.grpbxGender.SuspendLayout();
             this.grpbxQ1.SuspendLayout();
@@ -410,7 +411,7 @@
             this.grpbxQ2.Controls.Add(this.label1);
             this.grpbxQ2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.grpbxQ2.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpbxQ2.Location = new System.Drawing.Point(545, 576);
+            this.grpbxQ2.Location = new System.Drawing.Point(524, 578);
             this.grpbxQ2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpbxQ2.Name = "grpbxQ2";
             this.grpbxQ2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -640,7 +641,7 @@
             this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(797, 843);
+            this.btnSave.Location = new System.Drawing.Point(797, 890);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(115, 32);
@@ -678,7 +679,7 @@
             this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(920, 843);
+            this.btnExit.Location = new System.Drawing.Point(920, 890);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(108, 32);
@@ -823,7 +824,7 @@
             this.btnSeeResponse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
             this.btnSeeResponse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeeResponse.Font = new System.Drawing.Font("Bookman Old Style", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSeeResponse.Location = new System.Drawing.Point(797, 888);
+            this.btnSeeResponse.Location = new System.Drawing.Point(797, 850);
             this.btnSeeResponse.Margin = new System.Windows.Forms.Padding(4);
             this.btnSeeResponse.Name = "btnSeeResponse";
             this.btnSeeResponse.Size = new System.Drawing.Size(231, 32);
@@ -843,6 +844,22 @@
             this.datepickerMain.TabIndex = 41;
             this.datepickerMain.Value = new System.DateTime(2022, 6, 24, 23, 59, 59, 0);
             // 
+            // bntQRCode
+            // 
+            this.bntQRCode.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.bntQRCode.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.bntQRCode.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.bntQRCode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntQRCode.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntQRCode.Location = new System.Drawing.Point(402, 890);
+            this.bntQRCode.Margin = new System.Windows.Forms.Padding(4);
+            this.bntQRCode.Name = "bntQRCode";
+            this.bntQRCode.Size = new System.Drawing.Size(215, 32);
+            this.bntQRCode.TabIndex = 42;
+            this.bntQRCode.Text = "&Generate QR Code";
+            this.bntQRCode.UseVisualStyleBackColor = false;
+            this.bntQRCode.Click += new System.EventHandler(this.bntQRCode_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -850,6 +867,7 @@
             this.AutoSize = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1091, 951);
+            this.Controls.Add(this.bntQRCode);
             this.Controls.Add(this.datepickerMain);
             this.Controls.Add(this.btnSeeResponse);
             this.Controls.Add(this.IconEmail);
@@ -985,6 +1003,7 @@
         private System.Windows.Forms.PictureBox IconEmail;
         private System.Windows.Forms.Button btnSeeResponse;
         private System.Windows.Forms.DateTimePicker datepickerMain;
+        private System.Windows.Forms.Button bntQRCode;
     }
 }
 

@@ -73,6 +73,16 @@ namespace Contact_Tracing.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap navheader_qr_code {
+            get {
+                object obj = ResourceManager.GetObject("navheader_qr_code", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap search_e {
             get {
                 object obj = ResourceManager.GetObject("search e", resourceCulture);

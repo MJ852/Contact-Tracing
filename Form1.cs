@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QRCoder;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -177,6 +178,13 @@ namespace Contact_Tracing
             this.Hide();
             Form2 form = new Form2(this);
             form.Show();
+
+        }
+
+        private void bntQRCode_Click(object sender, EventArgs e)
+        {
+            QRCodeGenerator qr = new QRCodeGenerator();
+            QRCodeData data = qr.CreateQrCode();
 
         }
     }
