@@ -19,6 +19,7 @@ namespace Contact_Tracing
         List<ListViewItem> items = new List<ListViewItem>();
         Form1 prevForm;
         
+        
 
         public Form2(Form1 prevForm)
         {
@@ -27,7 +28,7 @@ namespace Contact_Tracing
             InitializeComponent();
             datepicker.CustomFormat = " ";
             datepicker.Format = DateTimePickerFormat.Custom;
-
+            
             this.prevForm = prevForm;
         }
 
@@ -45,42 +46,44 @@ namespace Contact_Tracing
 
         public void AllData(bool sorted = false)
         {
-            lstbxSeeAll.Items.Clear();
-            StreamReader ReadInformation;
-            ReadInformation = File.OpenText(@"C:\Users\Joyce Calangian\Documents\MJ\PUP\SUBJECTS\Health_Information.txt");
-
-            bool wait = false;
-            while (!ReadInformation.EndOfStream)
+            try
             {
-                String[] strLine = ReadInformation.ReadLine().Split(':');
-                if (sorted && strLine[0] == "Date")
-                    wait = strLine[1] != datepicker.Value.ToString("MM/dd/yyyy");
-                
-                if (wait && sorted)
-                    continue;
+                lstbxSeeAll.Items.Clear();
+                StreamReader ReadInformation;
+                ReadInformation = File.OpenText(@"C:\Users\Joyce Calangian\Documents\MJ\PUP\SUBJECTS\OBJECT ORIENTED PROGRAMMING\Contact Tracing File\Health_Information.txt");
 
-                if (strLine[0] == "Symptoms")
+                bool wait = false;
+                while (!ReadInformation.EndOfStream)
                 {
-                    String[] strSymptoms = strLine[1].Split(';');
+                    String[] strLine = ReadInformation.ReadLine().Split(':');
+                    if (sorted && strLine[0] == "Date")
+                        wait = strLine[1] != datepicker.Value.ToString("MM/dd/yyyy");
 
-                    if (strLine[1] == "")
-                        lstbxSeeAll.Items.Add("No Symptoms");
+                    if (wait && sorted)
+                        continue;
+
+                    if (strLine[0] == "Symptoms")
+                    {
+                        String[] strSymptoms = strLine[1].Split(';');
+
+                        if (strLine[1] == "")
+                            lstbxSeeAll.Items.Add("No Symptoms");
+                        else
+                            lstbxSeeAll.Items.Add(strLine[0] + ":");
+
+                        foreach (String iSymptoms in strSymptoms)
+                            if (iSymptoms != "")
+                                lstbxSeeAll.Items.Add(" ●  " + iSymptoms);
+
+                    }
+                    else if (strLine[0] == "")
+                        lstbxSeeAll.Items.Add("");
                     else
-                        lstbxSeeAll.Items.Add(strLine[0] + ":");
-
-                    foreach (String iSymptoms in strSymptoms)
-                        if (iSymptoms != "")
-                            lstbxSeeAll.Items.Add(" ●  " + iSymptoms);
+                        lstbxSeeAll.Items.Add(strLine[0] + ":  " + strLine[1]);
 
                 }
-                else if (strLine[0] == "")
-                    lstbxSeeAll.Items.Add("");
-                else
-                    lstbxSeeAll.Items.Add(strLine[0] + ":  " + strLine[1]);
-                
             }
-
-            ReadInformation.Close();
+            catch { }
         }
 
 

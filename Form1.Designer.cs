@@ -171,6 +171,8 @@
             // 
             // txtbxName1
             // 
+            this.txtbxName1.AutoCompleteCustomSource.AddRange(new string[] {
+            "Mary Joyce Calangian"});
             this.txtbxName1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtbxName1.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbxName1.Location = new System.Drawing.Point(97, 277);
@@ -962,7 +964,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Health Form";
-            this.Load += new System.EventHandler(this.txtbxName_Load);
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxLogo)).EndInit();
             this.grpbxGender.ResumeLayout(false);
             this.grpbxGender.PerformLayout();

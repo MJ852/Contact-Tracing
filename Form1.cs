@@ -17,15 +17,11 @@ namespace Contact_Tracing
         public static Form1 instance;
         public DateTime dt1;
         int panel = -1;
+        
         public Form1()
         {
             InitializeComponent();
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            instance = this;
         }
 
         private void lblDate_Click(object sender, EventArgs e)
@@ -77,7 +73,7 @@ namespace Contact_Tracing
         {
             int answer = 0;
 
-            StreamWriter information = File.AppendText(@"C:\Users\Joyce Calangian\Documents\MJ\PUP\SUBJECTS\Health_Information.txt");
+            StreamWriter information = File.AppendText(@"C:\Users\Joyce Calangian\Documents\MJ\PUP\SUBJECTS\OBJECT ORIENTED PROGRAMMING\Contact Tracing File\Health_Information.txt");
             information.WriteLine("Date:" + datepickerMain.Value.ToString("MM/dd/yyyy"));
             information.WriteLine("Name:" + txtbxName1.Text);
             information.WriteLine("Address:" + txtbxAddress.Text);
@@ -209,22 +205,24 @@ namespace Contact_Tracing
             {
                 QRCodeGenerator qr = new QRCodeGenerator();
 
-
-                var qrText = datepickerMain.Value + ";" +
-                txtbxName1.Text + ";" +
-                txtbxAddress.Text + ";" +
-                txtbxAge.Text + ";" +
-                txtbxContact.Text + ";" +
-                txtbxEmail.Text + ";" +
-                txtbxBodyTemp.Text + ";" +
-                grpbxGender.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Name + ";" +
-                grpbxQ1.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Name + ";" +
-                grpbxQ4.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Name + ";" +
-                grpbxQ2.Controls.OfType<CheckBox>().First(c => c.Checked).Name + ";";
+                
+                var qrText = "Date: " + datepickerMain.Value.ToString("MM/dd/yyyy") + ";" +
+                "Name: " + txtbxName1.Text + ";" +
+                "Address: " + txtbxAddress.Text + ";" +
+                "Age: " + txtbxAge.Text + ";" +
+                "Contact Number: " + txtbxContact.Text + ";" +
+                "Email: " + txtbxEmail.Text + ";" +
+                "Body Temperature: " + txtbxBodyTemp.Text + ";" +
+                "Gender: " + grpbxGender.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text + ";" +
+                "Close contact w/ COVID within two weeks:: " + grpbxQ1.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text + ";" +
+                "Vaccination Status: " + grpbxQ4.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text + ";" +
+                "Syptoms: " + ";" + " ●  " + grpbxQ2.Controls.OfType<CheckBox>().First(c => c.Checked).Text + ";";
 
                 QRCodeData data = qr.CreateQrCode(qrText, QRCodeGenerator.ECCLevel.Q);
                 QRCode code = new QRCode(data);
                 pctrbxQR.Image = code.GetGraphic(5);
+
+                
             }
             catch { }
             
@@ -242,6 +240,11 @@ namespace Contact_Tracing
             this.Hide();
             Form3 form3 = new Form3(this);
             form3.Show();
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
             
         }
 

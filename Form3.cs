@@ -13,6 +13,9 @@ using ZXing;
 using ZXing.Common;
 using ZXing.Rendering;
 using ZXing.QrCode;
+using System.Diagnostics;
+using System.Drawing.Imaging;
+using System.IO;
 
 namespace Contact_Tracing
 {
@@ -20,13 +23,13 @@ namespace Contact_Tracing
     {
         FilterInfoCollection filterInfoCollection;
         VideoCaptureDevice captureDevice;
-
-        Form1 prevForm;
+ 
+       
 
         public Form3(Form1 prevForm)
         {
             InitializeComponent();
-
+            
 
         }
 
@@ -73,7 +76,7 @@ namespace Contact_Tracing
                 captureDevice.Stop();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        public void timer1_Tick(object sender, EventArgs e)
         {
             try
             {
@@ -84,31 +87,45 @@ namespace Contact_Tracing
 
                     if (result != null)
                     {
-                        
-                        Form1 form1 = new Form1();
-                        form1.Text = result.ToString();
-                        form1.Show();
-                        timer1.Stop();
-
-                        if (captureDevice.IsRunning)
+                        try
                         {
-                            captureDevice.SignalToStop();
-                            captureDevice.WaitForStop();
-                        }
+                            StreamWriter HealthForm;
+                            HealthForm = File.AppendText(@"C:\Users\Joyce Calangian\Documents\MJ\PUP\SUBJECTS\OBJECT ORIENTED PROGRAMMING\Contact Tracing File\Health_Information.txt");
+                             
+                            HealthForm.WriteLine(result.ToString());
+                            HealthForm.Close();
 
-                        this.Close();
+                            timer1.Stop();
+
+                            if (captureDevice.IsRunning)
+                            {
+                                captureDevice.SignalToStop();
+                                captureDevice.WaitForStop();
+                            }
+
+
+                            MessageBox.Show("Thank you for answering! Stay safe!");
+                            Form1 form1 = new Form1();
+                            form1.Show();
+                            this.Close();
+
+                        }
+                        catch { }
                     }
-                    
+
                 }
             }
             catch { }
-            }
+        }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-    }
 
 
     }
+
+
+}
+
