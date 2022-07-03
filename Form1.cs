@@ -217,10 +217,10 @@ namespace Contact_Tracing
                 txtbxContact.Text + ";" +
                 txtbxEmail.Text + ";" +
                 txtbxBodyTemp.Text + ";" +
-                grpbxGender.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text + ";" +
-                grpbxQ1.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text + ";" +
-                grpbxQ4.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text + ";" +
-                grpbxQ2.Controls.OfType<CheckBox>().Where(c => c.Checked).ToString() + ";";
+                grpbxGender.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Name + ";" +
+                grpbxQ1.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Name + ";" +
+                grpbxQ4.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Name + ";" +
+                grpbxQ2.Controls.OfType<CheckBox>().First(c => c.Checked).Name + ";";
 
                 QRCodeData data = qr.CreateQrCode(qrText, QRCodeGenerator.ECCLevel.Q);
                 QRCode code = new QRCode(data);
@@ -240,14 +240,10 @@ namespace Contact_Tracing
         private void pctrbxScan_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form3 form3 = new Form3();
+            Form3 form3 = new Form3(this);
             form3.Show();
             
         }
 
-        private void lblPrvcyNtc2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
